@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luiz Fernando - Desenvolvedor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="imagens/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Luiz Fernando da Silva</h1>
+                <p>Desenvolvedor Front-end em Formação</p>
+                <a href="#" class="btn" target="_blank">Conheça meu trabalho</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <a href="#sobre">Sobre</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <div class="container">
+            <h2 class="secao-titulo">Sobre Mim</h2>
+            <div class="sobre-conteudo">
+                <div class="sobre-texto">
+                    <p>Olá! Sou um desenvolvedor front-end em formação, apaixonado por criar experiências digitais incríveis. Atualmente estou aprendendo HTML5, CSS3 e JavaScript.</p>
+                    <p>Meu objetivo é dominar as tecnologias web modernas e criar interfaces bonitas, funcionais e acessíveis. Estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente.</p>
+                    <p>Quando não estou programando, gosto de estudar inglês, ouvir música, ler livros, andar de bicicleta, praticar exercícios físicos e ficar conectado à natureza.</p>
+                </div>
+                <div class="sobre-imagem">
+                    <img src="imagens/myface.png" alt="Foto de Luiz Fernando" class="foto-perfil">    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Habilidades -->
+    <section id="habilidades">
+        <div class="container">
+            <h2 class="secao-titulo">Minhas Habilidades</h2>
+            <div class="habilidades-grid">
+                <div class="habilidade-card">
+                    <h3>HTML5</h3>
+                    <p>Estruturação semântica de páginas web, uso de tags modernas e acessibilidade.</p>
+                    <div class="progresso">
+                        <div class="progresso-barra" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="habilidade-card">
+                    <h3>CSS3</h3>
+                    <p>Estilização avançada, Flexbox, Grid, responsividade e animações.</p>
+                    <div class="progresso">
+                        <div class="progresso-barra" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="habilidade-card">
+                    <h3>JavaScript</h3>
+                    <p>Em aprendizado - lógica de programação e interatividade.</p>
+                    <div class="progresso">
+                        <div class="progresso-barra" style="width: 20%;"></div>
+                    </div>
+                </div>
+                <div class="habilidade-card">
+                    <h3>Design Responsivo</h3>
+                    <p>Criação de layouts que funcionam em qualquer dispositivo.</p>
+                    <div class="progresso">
+                        <div class="progresso-barra" style="width: 50%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Seção Projetos -->
+    <section id="projetos">
+        <div class="container">
+            <h2 class="secao-titulo">Meus Projetos</h2>
+            <div class="projetos-grid">
+                <div class="projeto-card">
+                    <h3>Projeto 1 - Landing Page</h3>
+                    <p>Uma landing page responsiva criada com HTML5 e CSS3, focada em conversão e experiência do usuário.</p>
+                    <p><strong>Tecnologias:</strong> HTML5, CSS3, Flexbox</p>
+                </div>
+                <div class="projeto-card">
+                    <h3>Projeto 2 - Portfolio</h3>
+                    <p>Meu primeiro portfolio pessoal, onde apliquei conceitos de design responsivo e acessibilidade.</p>
+                    <p><strong>Tecnologias:</strong> HTML5, CSS3, Grid</p>
+                </div>
+                <div class="projeto-card">
+                    <h3>Projeto 3 - Em Desenvolvimento</h3>
+                    <p>Próximo projeto em desenvolvimento usando JavaScript para interatividade.</p>
+                    <p><strong>Tecnologias:</strong> HTML5, CSS3, JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato com Formulário -->
+     <section id="contato" class="formulario-contato">
+        <div class="container">
+            <h2 class="secao-titulo">Entre em contato</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Estou sempre aberto para novas oportunidades e colaborações!</p>
+
+            <div class="formulario-container">
+                <form action="https://formspree.io/f/xjkekrwl" method="POST" id="contato-form">
+                    <!-- Campo oculto para assunto do email -->
+                     <input type="hidden" name="_subject" value="Nova mensagem do portfólio - Luiz Fernando">
+
+                     <!-- Campo anti-spam (invisível) -->
+                      <input type="text" name="_gotcha" aria-hidden="true" tabindex="-1" style="display:none">
+
+                      <div class="form-group">
+                        <label for="nome">Nome Completo *</label>
+                        <input type="text" id="nome" name="name" required placeholder="Digite seu nome completo">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="_replyto" required placeholder="seuemail@gmail.com">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="phone" placeholder="(14) 99999-9999">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="assunto">Assunto *</label>
+                        <input type="text" id="assunto" name="subject" required placeholder="Sobre o que você gostaria de falar?">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="mensagem">Mensagem *</label>
+                        <textarea id="mensagem" name="message" required placeholder="Digite sua mensagem aqui..."></textarea>
+
+                        <button type="submit" class="btn-enviar">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                        </button>
+
+                        <div id="status-message" class="status-message"></div>
+                      </div>
+                </form>
+            </div>
+        </div>
+     </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h2>Outras formas de contato</h2>
+            <div class="contato-links">
+                <a href="mailto:luizfernandodev16@gmail.com">📧 Email</a>
+                <a href="https://www.linkedin.com/in/luiz-fernando-9747922b7/" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
+                <a href="https://github.com/Luiz-9858" target="_blank" rel="noopener noreferrer">🐱 GitHub</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">📱 WhatsApp</a>
+            </div>
+            <p style="margin-top: 2rem; opacity: 0.8;">&copy; 2025 Luiz Fernando da Silva. Feito com ❤️ e muito café.</p>
+        </div>
+    </footer>
+</body>
+</html>
