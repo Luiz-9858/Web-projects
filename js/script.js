@@ -18,3 +18,22 @@
                 statusMessage.style.display = 'block';
             }, 1000);
         });
+
+        function abrirWhatsApp() {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    const numero = "5514988009858";
+    const mensagem = "Olá! Vi seu portfólio online.";
+    
+    if (isMobile) {
+        // Para mobile - abre o app
+        window.open(`whatsapp://send?phone=${numero}&text=${encodeURIComponent(mensagem)}`, '_blank');
+        
+        // Fallback se não tiver o app
+        setTimeout(() => {
+            window.open(`https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(mensagem)}`, '_blank');
+        }, 1000);
+    } else {
+        // Para desktop - abre WhatsApp Web
+        window.open(`https://web.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(mensagem)}`, '_blank');
+    }
+}
