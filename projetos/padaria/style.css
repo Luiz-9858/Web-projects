@@ -12,9 +12,40 @@ body {
     background-color: #f4f4f4;
 }
 
+nav {
+    background: #333;
+    padding: 1rem 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background: #555;
+}
+
+/* PARA TESTAR EM OUTROS PROJETOS 
 header {
-    background: linear-gradient(135deg, #ffa72ca0 0%, #ff8a1c 100%);
+    background: conic-gradient(from 0deg, red, yellow,green, blue, red);
+    color: white;
+    text-align: center;
+    padding: 4rem 0; */
+
+header {
+    background: linear-gradient(135deg, #ffa72cdd 0%, #ffbe82 100%);
     color: white;
     text-align: center;
     padding: 4rem 0;
 }
+
