@@ -23,3 +23,215 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+/* Overlay Escuro */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(101, 67, 33, 0.7); /* Tom marrom para combinar com os pães */
+    z-index: 1;
+}
+
+/* Conteúdo Sobreposto */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 3rem 2rem;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(2px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.hero .subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #FFE4B5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-style: italic;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    line-height: 1.8;
+    color: #FFF8DC;
+}
+
+.cta-button {
+    background: linear-gradient(45deg, #D2691E);
+    color: white;
+    padding: 1.2rem 3rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(210, 105, 30, 0.4);
+}
+
+.cta-button:hover {
+    background: linear-gradient(45deg, #B8860B, #DAA520);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(210, 105, 30, 0.6);
+}
+
+/* Seção Produtos */
+.produtos {
+    padding: 5rem 2rem;
+    background: -o-linear-gradient(135deg, #FFF8DC, #F5DEB3);
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 2.8rem;
+    color: #8B4513;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto 0;
+}
+
+.produto-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(139, 69, 19, 0.2);
+    transition: transform 0.3s ease;
+    border: 2px solid #F5DEB3;
+}
+
+.produto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(139, 69, 19, 0.3);
+}
+
+.produto-icon {
+    font-size: 3rem;
+    color: #D2691E;
+    margin-bottom: 1rem;
+}
+
+.produto-card h3 {
+    font-size: 1.5rem;
+    color: #8B4513;
+    margin-bottom: 1rem;
+}
+
+.produto-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Seção Sobre */
+.sobre {
+    padding: 5rem 2rem;
+    background: #8B4513;
+    color: white;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    color:#F5DEB3;
+}
+
+.sober p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Footer */
+.footer {
+    background: #654321;
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #F5DEB3;
+}
+
+.footer p, .footer a {
+    color: #DDD;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.footer a:hover {
+    color: #F5DEB3;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .subtitle {
+        font-size: 1.3rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .hero-content {
+        padding: 2rem 1rem;
+    }
+
+    .hero {
+        background-attachment: scroll;
+    }
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transition: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content {
+    animation: fadeInUp 1s ease-out;
+}
