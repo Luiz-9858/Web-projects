@@ -1,39 +1,59 @@
-// Script para melhorar a experiência do usuário
+// Script para o formulário
         document.getElementById('contato-form').addEventListener('submit', function(e) {
-            const button = document.querySelector('.btn-enviar');
+            e.preventDefault();
+            
+            const form = this;
+            const submitBtn = form.querySelector('.submit-btn');
             const statusMessage = document.getElementById('status-message');
             
-            // Mudança visual no botão durante o envio
-            button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
-            button.disabled = true;
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Enviando...';
             
-            // Esconder mensagens anteriores
-            statusMessage.style.display = 'none';
-            
-            // Após 2 segundos, mostrar que foi enviado
-            // (O Formspree vai redirecionar automaticamente)
-            setTimeout(() => {
-                statusMessage.innerHTML = 'Mensagem enviada! Redirecionando...';
-                statusMessage.className = 'status-message status-success';
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => {
+                if (response.ok) {
+                    statusMessage.className = 'status-message status-success';
+                    statusMessage.textContent = 'Mensagem enviada com sucesso!';
+                    statusMessage.style.display = 'block';
+                    form.reset();
+                } else {
+                    throw new Error('Erro no envio');
+                }
+            })
+            .catch(error => {
+                statusMessage.className = 'status-message status-error';
+                statusMessage.textContent = 'Erro ao enviar mensagem. Tente novamente.';
                 statusMessage.style.display = 'block';
-            }, 1000);
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Enviar mensagem';
+                setTimeout(() => {
+                    statusMessage.style.display = 'none';
+                }, 5000);
+            });
         });
 
-        function abrirWhatsApp() {
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    const numero = "5514988009858";
-    const mensagem = "Olá! Vi seu portfólio online.";
-    
-    if (isMobile) {
-        // Para mobile - abre o app
-        window.open(`whatsapp://send?phone=${numero}&text=${encodeURIComponent(mensagem)}`, '_blank');
-        
-        // Fallback se não tiver o app
-        setTimeout(() => {
-            window.open(`https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(mensagem)}`, '_blank');
-        }, 1000);
-    } else {
-        // Para desktop - abre WhatsApp Web
-        window.open(`https://web.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(mensagem)}`, '_blank');
-    }
-}
+        // Animação das barras de habilidade
+        const observerOptions = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const progressBars = entry.target.querySelectorAll('.skill-progress');
+                    progressBars.forEach(bar => {
+                        bar.style.width = bar.style.width || '0%';
+                    });
+                }
+            });
+        }, observerOptions);
+
+        const skillsSection = document.getElementById('habilidades');
+        if (skillsSection) {
+            observer.observe(skillsSection);
+        }
