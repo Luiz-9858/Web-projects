@@ -173,15 +173,29 @@
         }
 
         .projeto-card {
-            background: white;
-            border-radius: 10px;
-            padding: 2rem;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
+            cursor: pointer;
         }
 
         .projeto-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .btn-ver-projeto {
+            display: inline-block;
+            color: #007bff;
+            text-decoration: none;
+            padding: 8px 0;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .btn-ver-projeto:hover {
+            border-bottom: 1px solid #007bff;
+            color: #0056b3;
         }
 
         .projeto-card h3 {
