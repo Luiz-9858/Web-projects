@@ -156,7 +156,7 @@ body {
     color:#F5DEB3;
 }
 
-.sober p {
+.sobre p {
     font-size: 1.2rem;
     max-width: 800px;
     margin: 0 auto;
@@ -234,4 +234,123 @@ body {
 
 .hero-content {
     animation: fadeInUp 1s ease-out;
+}
+
+/* ===== ESTILOS DA PÁGINA DE PRODUTOS ====== */
+.produtos-hero {
+    background: linear-gradient(rgba(139, 69, 19, 0.8), rgba(101, 67, 33, 0.8)), url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=400&fit=crop');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.produtos-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #FFE4B5;
+}
+
+.produtos-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Seção de produtos em destaque */
+.produtos-destaque {
+    padding: 4rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #8B4513;
+    margin-bottom: 3rem;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.produto-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(139, 69, 19, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(139, 69, 19, 0.25);
+}
+
+.produto-img {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.preco-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #D2691E;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.produto-info {
+    padding: 1.5rem;
+}
+
+.produto-info h3 {
+    color: #8B4513;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.produto-info p {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.ingredientes {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
