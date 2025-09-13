@@ -2,7 +2,7 @@
 function scrollTo(elementId) {
     document.getElementById(elementId).scrollIntoView({
         behavior: 'smooth'
-    })
+    });
 }
 
 // Efeito de parallax suave
