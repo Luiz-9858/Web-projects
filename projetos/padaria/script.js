@@ -5,10 +5,12 @@ function scrollTo(elementId) {
     })
 }
 
-// Efeito de paralaxx suave //
+// Efeito de parallax suave
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const hero = document.querySelector('.hero');
-    const speed = scrolled * 0.5;
-     hero.style.transform = `translateY(${speed}px)`;
+    if (hero) {
+        const speed = scrolled * 0.5;
+        hero.style.transform = `translateY(${speed}px)`;
+    }
 });

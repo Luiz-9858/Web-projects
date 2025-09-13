@@ -7,14 +7,12 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #fff8dc;
-    
+    line-height: 1.6;  
 }
 
 /* Seção Hero com Imagem de Fundo */
 .hero {
-    background-image: url(images/breads.jpg);
+    background-image: linear-gradient(rgba(101, 67, 33, 0.7), rgba(101, 67, 33, 0.7)), url('images/breads.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,8 +22,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0; /* Remove margin-top se existir */
-    padding-top: 80px; /* Adiciona padding para compensar header */
+    
 }
 
 /* Overlay Escuro */
@@ -54,6 +51,15 @@ body {
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #FFE4B5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
 }
 
 .hero .subtitle {
@@ -73,7 +79,7 @@ body {
 }
 
 .cta-button {
-    background: linear-gradient(45deg, #D2691E);
+    background: linear-gradient(45deg, #D2691E, #B8860B);
     color: white;
     padding: 1.2rem 3rem;
     border: none;
@@ -198,6 +204,7 @@ body {
 
 .footer a:hover {
     color: #F5DEB3;
+    transition: color 0.3s ease;
 }
 
 /* Responsivo */
@@ -220,7 +227,6 @@ body {
 
     .hero {
         background-attachment: scroll;
-        padding-top: 120px; /* Mais espaços no mobile */
     }
 }
 
@@ -237,10 +243,6 @@ body {
     }
 }
 
-.hero-content {
-    animation: fadeInUp 1s ease-out;
-}
-
 /* ===== ESTILOS DA PÁGINA DE PRODUTOS ====== */
 
 * {
@@ -252,18 +254,17 @@ body {
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #fff0dc;
+    background-color: #fff8dc;
 }
 /* Header/Navegação */
 .header {
-    background: linear-gradient(135, #5D2F0A, #3E1F07);
+    background: linear-gradient(135deg, #8B4513, #654321);
     padding: 1rem 2rem;
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    height: 80px; /* Definindo  a altura fixa */
 }
 
 .nav {
@@ -271,12 +272,11 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
-    height: 100%;
+    margin: 0 auto; 
 }
 
 .logo {
-    color: #ffcb6b;
+    color: #F5DEB3;
     font-size: 1.8rem;
     font-weight: bold;
     text-decoration: none;
@@ -289,7 +289,7 @@ body {
 }
 
 .nav-links a {
-    color: #bcaa87;
+    color: #F5DEB3;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -332,7 +332,6 @@ body {
 /* Seção de produtos em destaque */
 .produtos-destaque {
     padding: 4rem 0;
-    padding-top: 2rem;
 }
 
 .section-title {
@@ -559,28 +558,15 @@ body {
 
 /* Responsivo */
 @media (max-width: 768px) {
-    .header {
-        height: auto; /* Altura automática no mobile */
-        min-height: 80px;
-        padding: 0.5rem 1rem;
-    }
-
     .nav {
         flex-direction: column;
         gap: 1rem;
-        padding: 0.5rem 0;
     }
 
     .nav-links {
-        flex-direction: row; /* Mantém horizontal no mobile */
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
-        text-align: center;
         gap: 1rem;
-    }
-
-    .produtos-hero {
-        margin-top: 120px; /* Mais espaço no mobile */
     }
 
     .produtos-hero h1 {
