@@ -33,7 +33,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(101, 67, 33, 0.7); /* Tom marrom para combinar com os pães */
+    background: rgba(101, 67, 33, 0.332); /* Tom marrom para combinar com os pães */
     z-index: 1;
 }
 
@@ -300,7 +300,7 @@ body {
 
 /* Hero da página de produtos */
 .produtos-hero {
-    background: linear-gradient(rgba(139, 69, 19, 0.8), rgba(101, 67, 33, 0.8)), url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=400&fit=crop');
+    background: linear-gradient(rgba(139, 69, 19, 0.551), rgba(101, 67, 33, 0.8)), url('images/biblia-pao-vimnho.jpg');
     background-size: cover;
     background-position: center;
     padding: 4rem 2rem;
