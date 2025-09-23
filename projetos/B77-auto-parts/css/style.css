@@ -95,7 +95,7 @@
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%23f0f0f0" width="1200" height="400"/><text x="600" y="200" text-anchor="middle" font-family="Arial" font-size="24" fill="%23666">Foto da Loja/Peças Automotivas</text></svg>');
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/autoparts.png');
             background-size: cover;
             background-position: center;
             height: 400px;
@@ -105,6 +105,9 @@
             text-align: center;
             width: 100%;
         }
+
+        
+    
 
         .hero-content {
             width: 100%;
