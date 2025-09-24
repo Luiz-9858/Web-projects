@@ -163,6 +163,14 @@
             margin-top: 40px;
             width: 100%;
         }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Mantém a proporção sem distorcer */
+            object-position: center;
+            border-radius: 0;
+        }
         
         .product-card {
             background: white;

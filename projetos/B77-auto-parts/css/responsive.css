@@ -130,6 +130,14 @@
                 font-size: 0.9rem;
                 padding: 8px 12px;
             }
+
+            .product-image {
+                height: 180px;
+            }
+
+            .product-image img {
+                object-fit: cover;
+            }
             
             .hero {
                 height: 300px;
