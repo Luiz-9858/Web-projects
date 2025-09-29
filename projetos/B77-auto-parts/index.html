@@ -1,140 +1,196 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B77 AUTO PARTS - Autopeças em Bauru</title>
+    <title>B77 Auto Parts - Peças Automotivas</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    
 </head>
 <body>
-     <!-- Header -->
-    <header>
+    <!-- Header Top -->
+    <div class="header-top">
         <div class="container">
-            <div class="header-content">
-                <div class="logo">B77 AUTO PARTS</div>
-                <div class="contact-info">
-                    <div>📍 Bauru - SP</div>
-                    <div>📱 (14) 9999-9999</div>
-                    <div>⏰ Seg-Sex: 8h às 18h</div>
-                </div>
+            <div class="header-links">
+                <a href="#">Fale Conosco</a>
+                <a href="#">Meus Pedidos</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="header-contact">
+                Frete Grátis nas compras acima de R$150,00 (Somente para São Paulo)
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="header-main">
+        <div class="container">
+            <div class="logo">B77 AUTO PARTS</div>
+            
+            <div class="search-box">
+                <input type="text" placeholder="O que você procura?">
+                <button class="search-btn">🔍</button>
+            </div>
+
+            <div class="user-actions">
+                <a href="#">📞 Atendimento<br>(11) 2065-0831</a>
+                <a href="#">👤 Olá, Bem-vindo<br>LOGIN</a>
+                <a href="#">🛒 Meu carrinho<br>0 ITENS</a>
             </div>
         </div>
     </header>
 
-    <!-- Navegação -->
-    <nav>
-        <div class="container">
-            <div class="nav-menu">
-                <a href="index.html">Início</a>
-                <a href="produtos.html">Produtos</a>
-                <a href="sobre.html">Sobre</a>
-                <a href="contato.html">Contato</a>
-            </div>
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-container">
+            <a href="#" class="nav-item">🏠 TODA A LOJA</a>
+            <a href="#" class="nav-item">🔧 ACESSÓRIOS</a>
+            <a href="#" class="nav-item">🚗 CABINE E CHASSI</a>
+            <a href="#" class="nav-item">⚙️ CÂMBIO</a>
+            <a href="#" class="nav-item">🛢️ FILTROS E LUBRIFICANTES</a>
+            <a href="#" class="nav-item">🚛 MOTOR</a>
+            <a href="#" class="nav-item">⚫ RODAS E FREIOS</a>
+            <a href="#" class="nav-item">🏷️ MARCAS</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1>Autopeças de Qualidade em Bauru</h1>
-                <p>Chicotes, freios, conectores e muito mais para seu veículo</p>
-                <a href="#produtos" class="cta-button">Ver Produtos</a>
-            </div>
+            <h1>PEÇAS EM DIA, VIAGENS SEGURAS</h1>
+            <p>Acelere a manutenção do seu veículo com as melhores peças automotivas do mercado</p>
+            <a href="#produtos" class="cta-button">COMPRE EM ATÉ 6X SEM JUROS</a>
         </div>
     </section>
 
-    <!-- Produtos em Destaque -->
-    <section class="container" id="produtos">
-        <h2 class="section-title">Produtos em Destaque</h2>
-        <div class="products-grid">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/img5.jpeg" alt="Chicóte de Caminhão VW">
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Entrega em todo Brasil</h3>
+                    <p>Enviamos para qualquer lugar do país com segurança e rapidez</p>
                 </div>
-                <div class="product-info">
-                    <h3>Chicote de Caminhão SU</h3>
-                    <p>Chicote elétrico para caminhões VW</p>
-                    <div class="product-price">A partir de R$ 1150,00</div>
-                    <button class="whatsapp-btn">💬 Consultar no WhatsApp</button>
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>Parcele em 6x nos cartões</h3>
+                    <p>Facilidade de pagamento para você cuidar do seu veículo</p>
                 </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image">🚛</div>
-                <div class="product-info">
-                    <h3>Módulo de Caminhão</h3>
-                    <p>Módulos eletrônicos originais</p>
-                    <div class="product-price">A partir de R$ 300,00</div>
-                    <button class="whatsapp-btn">💬 Consultar no WhatsApp</button>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/conector.png" alt="Conectores Elétricos">
-                </div>
-                <div class="product-info">
-                    <h3>Conectores</h3>
-                    <p>Conectores para chicotes e motores</p>
-                    <div class="product-price">A partir de R$ 25,00</div>
-                    <button class="whatsapp-btn">💬 Consultar no WhatsApp</button>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image">🔲</div>
-                <div class="product-info">
-                    <h3>Relés Diversos</h3>
-                    <p>Relés de diversos tamanhos</p>
-                    <div class="product-price">A partir de R$ 15,00</div>
-                    <button class="whatsapp-btn" type="">💬 Consultar no WhatsApp</button>
+                <div class="feature-card">
+                    <div class="feature-icon">🏪</div>
+                    <h3>Loja 100% segura e confiável</h3>
+                    <p>Compre com tranquilidade em nosso ambiente protegido</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Marcas -->
-    <section class="brands">
+    <!-- Products Section -->
+    <section class="products" id="produtos">
         <div class="container">
-            <h2 class="section-title">Trabalhamos com as Melhores Marcas</h2>
-            <div class="brands-grid">
-                <div class="brand-logo">VOLKSWAGEN</div>
-                <div class="brand-logo">FORD</div>
-                <div class="brand-logo">CHEVROLET</div>
+            <h2 class="section-title">DESTAQUES</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">🔧</div>
+                    <div class="product-info">
+                        <div class="product-name">Kit de Ferramentas Profissional</div>
+                        <div class="product-price">R$ 89,90</div>
+                        <button class="product-btn">🛒 COMPRAR</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">🛢️</div>
+                    <div class="product-info">
+                        <div class="product-name">Óleo Motor Sintético 5W30</div>
+                        <div class="product-price">R$ 45,90</div>
+                        <button class="product-btn">🛒 COMPRAR</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">⚙️</div>
+                    <div class="product-info">
+                        <div class="product-name">Filtro de Ar Esportivo</div>
+                        <div class="product-price">R$ 125,90</div>
+                        <button class="product-btn">🛒 COMPRAR</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">💡</div>
+                    <div class="product-info">
+                        <div class="product-name">Lâmpada LED H7 6000K</div>
+                        <div class="product-price">R$ 67,90</div>
+                        <button class="product-btn">🛒 COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">🏢</div>
+                <div class="about-text">
+                    <h2>SOBRE NÓS</h2>
+                    <p>A B77 Auto Parts começou sua jornada em 2020 quando percebeu a necessidade de uma empresa qualificada no segmento de reposição de peças automotivas. Unindo experiência do comércio e expertise de uma tradicional família do ramo automotivo, criou-se um canal apto a atender um consumidor exigente, que procura qualidade e segurança.</p>
+                    
+                    <p><strong>Missão:</strong> Superar as expectativas dos nossos clientes de atacado e varejo, buscando melhoria contínua dos nossos serviços com ética, eficiência, responsabilidade e respeito.</p>
+                    
+                    <p><strong>Visão:</strong> Ser considerada uma Distribuidora de Auto Peças de primeira linha no Brasil, conquistando a credibilidade e confiança dos nossos clientes através de desenvolvimento das pessoas e investimento em novas técnicas.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="contato">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Contato</h3>
-                    <p>📱 WhatsApp: (14) 9999-9999</p>
-                    <p>📞 Telefone: (14) 3333-3333</p>
-                    <p>📧 contato@b77autoparts.com.br</p>
+                    <h3>INSTITUCIONAL</h3>
+                    <a href="#">Quem Somos</a><br>
+                    <a href="#">Perguntas Frequentes</a><br>
+                    <a href="#">Política de Privacidade</a><br>
+                    <a href="#">Política de Trocas e Devoluções</a><br>
+                    <a href="#">Nosso Blog</a>
                 </div>
+                
                 <div class="footer-section">
-                    <h3>Localização</h3>
-                    <p>📍 Rua das Autopeças, 123</p>
-                    <p>Bauru - SP, CEP: 17000-000</p>
-                    <p>⏰ Seg-Sex: 8h às 18h</p>
+                    <h3>SERVIÇOS</h3>
+                    <a href="#">Fale Conosco</a><br>
+                    <a href="#">Meus Pedidos</a><br>
+                    <a href="#">Meu Cadastro</a><br>
+                    <a href="#">Rastreamento</a>
                 </div>
+                
                 <div class="footer-section">
-                    <h3>Produtos</h3>
-                    <p>• Chicotes de Caminhão</p>
-                    <p>• Módulos Eletrônicos</p>
-                    <p>• Freios e Conectores</p>
-                    <p>• Relés e Acessórios</p>
+                    <h3>CONTATO - LOJA PRINCIPAL</h3>
+                    <p>📍 Rua das Peças, 777<br>
+                    Vila Automotiva, São Paulo - SP</p>
+                    <p>📞 (11) 2065-0831</p>
+                    <p>✉️ contato@b77autoparts.com.br</p>
+                    <p>🕒 De segunda à sexta, das 8h às 18h<br>
+                    Sábado das 8h às 12h</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>FORMAS DE PAGAMENTO</h3>
+                    <p>💳 Cartões de Crédito e Débito<br>
+                    💰 PIX<br>
+                    📄 Boleto Bancário</p>
+                    
+                    <h3 style="margin-top: 20px;">CERTIFICAÇÕES</h3>
+                    <p>🔒 Site Seguro SSL<br>
+                    ✅ Loja Verificada</p>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2025 B77 AUTO PARTS - Todos os direitos reservados</p>
+                <p>&copy; 2024 B77 Auto Parts. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
