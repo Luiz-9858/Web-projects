@@ -26,6 +26,11 @@ Criar uma página institucional simples e elegante para um consultório odontol�
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 
 ## 📂 Estrutura de Arquivos
+```consutorio-odontologico/
+├── index.html          # Página principal
+├── style.css           # Estilos
+└── README.md          # Este arquivo
+```
 ## 💡 Conceitos Aplicados
 
 - **HTML Semântico**: Uso de tags apropriadas (`<header>`, `<section>`, `<footer>`)
@@ -46,7 +51,7 @@ Criar uma página institucional simples e elegante para um consultório odontol�
 
 ## 📅 Status
 
-**✅ Concluído** - Agosto/2024
+**🟡 Em andamento** - Agosto/2025
 
 ---
 
