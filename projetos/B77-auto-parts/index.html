@@ -10,46 +10,48 @@
     <!-- Header Top -->
     <div class="header-top">
         <div class="container">
-            <div class="header-links">
-                <a href="#">Fale Conosco</a>
-                <a href="#">Meus Pedidos</a>
-                <a href="#">Blog</a>
-            </div>
-            <div class="header-contact">
-                Frete Grátis nas compras acima de R$150,00 (Somente para São Paulo)
-            </div>
+            <div>Atendimento: (14) 2065-7744</div>
+            <div>Olá, Bem-vindo | LOGIN</div>  
         </div>
     </div>
 
     <!-- Main Header -->
     <header class="header-main">
         <div class="container">
-            <div class="#">B77 AUTO PARTS</div>
+            <div class="#" class="logo">🔧 B77 AUTO PARTS</div>
             
             <div class="search-box">
-                <input type="text" placeholder="O que você procura?">
-                <button class="search-btn">🔍</button>
+                <input type="search" placeholder="Busque por peças, marcas ou veículos...">
+                <button>🔍</button>
             </div>
 
             <div class="user-actions">
-                <a href="#">📞 Atendimento<br>(11) 2065-0831</a>
-                <a href="#">👤 Olá, Bem-vindo<br>LOGIN</a>
-                <a href="#">🛒 Meu carrinho<br>0 ITENS</a>
+                <a href="#">
+                    <span class="icon">👤</span>
+                    <span>Minha Conta</span>
+                </a>
+                <a href="#">
+                    <span class="icon">🛒</span>
+                    <span class="cart-count">0</span>
+                    <span>Carrinho</span>
+                </a>    
             </div>
         </div>
     </header>
 
     <!-- Navigation -->
     <nav class="navigation">
-        <div class="nav-container">
-            <a href="#" class="nav-item">🏠 TODA A LOJA</a>
-            <a href="#" class="nav-item">🔧 ACESSÓRIOS</a>
-            <a href="#" class="nav-item">🚗 CABINE E CHASSI</a>
-            <a href="#" class="nav-item">⚙️ CÂMBIO</a>
-            <a href="#" class="nav-item">🛢️ FILTROS E LUBRIFICANTES</a>
-            <a href="#" class="nav-item">🚛 MOTOR</a>
-            <a href="#" class="nav-item">⚫ RODAS E FREIOS</a>
-            <a href="#" class="nav-item">🏷️ MARCAS</a>
+        <div class="container">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div class="nav-container" id="navMenu">
+                <a href="#">Início</a>
+                <a href="#">Chicótes</a>
+                <a href="#">Chassis</a>
+                <a href="#">Motor</a>
+                <a href="#">Suspensão</a>
+                <a href="#">Ofertas</a>
+                <a href="#">Contato</a>
+            </div>
         </div>
     </nav>
 
@@ -73,15 +75,20 @@
                     <p>Enviamos para qualquer lugar do país com segurança e rapidez</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">💳</div>
-                    <h3>Parcele em até 12x</h3>
-                    <p>Facilidade de pagamento</p>
+                    <div class="icon">✅</div>
+                    <h3>Garantia Total</h3>
+                    <p>Todas as peças com garantia de fábrica</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🏪</div>
-                    <h3>Loja 100% segura e confiável</h3>
-                    <p>Compre com tranquilidade em nosso ambiente protegido</p>
+                    <div class="icon">💳</div>
+                    <h3>Parcele em até 12x</h3>
+                    <p>Facilidade no pagamento</p>
                 </div>
+                <div class="feature-card">
+                    <div class="icon">🔧</div>
+                    <h3>Suporte Técnico</h3>
+                    <p>Equipe especializada para te ajudar</p>
+                </div>   
             </div>
         </div>
     </section>
@@ -89,41 +96,41 @@
     <!-- Products Section -->
     <section class="products">
         <div class="container">
-            <h2 class="section-title">Produtos em Destaque</h2>
-            <div class="products-grid">
+            <h2>Produtos em Destaque</h2>
+            <div class="product-grid">
                 <div class="product-card">
-                    <div class="product-image">🔧</div>
+                    <img src="" alt="Filtro de Óleo" class="product-image">
                     <div class="product-info">
                         <h3 class="product-title">Filtro de Óleo Motor</h3>
                         <div class="product-price">R$ 45,90</div>
-                        <button class="product-btn">🛒 Adicionar ao Carrinho</button>
+                        <button class="btn">🛒 Adicionar ao Carrinho</button>
                     </div>
                 </div>
                 
                 <div class="product-card">
-                    <div class="product-image">🛢️</div>
+                    <img src="" alt="Pastilha" class="product-image">
                     <div class="product-info">
                         <h3 class="product-title">Pastilha de Freio Dianteira</h3>
                         <div class="product-price">R$ 129,90</div>
-                        <button class="product-btn">🛒 Adicionar ao Carrinho</button>
+                        <button class="btn">🛒 Adicionar ao Carrinho</button>
                     </div>
                 </div>
                 
                 <div class="product-card">
-                    <div class="product-image">⚙️</div>
+                    <img src="" alt="Amortecedor" class="product-image">
                     <div class="product-info">
-                        <div class="product-name">Filtro de Ar Esportivo</div>
-                        <div class="product-price">R$ 125,90</div>
-                        <button class="product-btn">🛒 Adicionar ao Carrinho</button>
+                        <h3 class="product-title">Amortecedor Traseiro</h3>
+                        <div class="product-price">R$ 289,90</div>
+                        <button class="btn">🛒 Adicionar ao Carrinho</button>
                     </div>
                 </div>
                 
                 <div class="product-card">
-                    <div class="product-image">💡</div>
+                    <img src="https://via.placeholder.com/250x250/1e3a8a/FFFFFF?text=Bateria" alt="Bateria" class="product-image">
                     <div class="product-info">
-                        <div class="product-name">Lâmpada LED H7 6000K</div>
-                        <div class="product-price">R$ 67,90</div>
-                        <button class="product-btn">🛒 Adicionar ao Carrinho</button>
+                        <h3 class="product-title">Bateria 60Ah</h3>
+                        <div class="product-price">R$ 349,90</div>
+                        <button class="btn">🛒 Adicionar ao Carrinho</button>
                     </div>
                 </div>
             </div>
@@ -131,7 +138,7 @@
     </section>
 
      <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank" rel="noopener" title="Fale conosco no WhatsApp" >
+    <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank" rel="noopener" title="Fale conosco no WhatsApp">
         💬
     </a>
 
