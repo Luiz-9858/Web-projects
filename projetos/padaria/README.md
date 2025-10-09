@@ -6,7 +6,6 @@ Site institucional para padaria local, com apresentação de produtos e informa�
 
 ![Screenshot do projeto](https://github.com/Luiz-9858/Portf-lio-simples-com-formul-rio/blob/main/projetos/padaria/padaria-second-page.png)
 ![Sreenshot do projeto](https://github.com/Luiz-9858/Portf-lio-simples-com-formul-rio/blob/main/projetos/padaria/padariasanta.png)
-> Para adicionar screenshot: tire um print do site, salve como `screenshot.png` na pasta do projeto e faça upload
 
 ## 🎯 Objetivo do Projeto
 
