@@ -2,7 +2,7 @@
 
 ## 📸 Preview
 
-![Screenshot do projeto](https://github.com/Luiz-9858/Portf-lio-simples-com-formul-rio/blob/main/projetos/B77-auto-parts/screenshot.png?raw=true)
+![Screenshot do projeto](https://github.com/Luiz-9858/Portf-lio-simples-com-formul-rio/blob/main/projetos/B77-auto-parts/Captura%20de%20tela%202025-10-11%20154600.png)
 
 
 ## 🎯 Objetivo do Projeto
