@@ -25,6 +25,16 @@ Criar um site profissional de e-commerce para venda de peças automotivas, aplic
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
+
+## 🇺🇸 English
+
+Complete e-commerce system for auto parts store.
+
+### Technologies:
+- HTML5, CSS3, JavaScript
+- Responsive Design
+- Modern and professional interface
+
 ## 📂 Estrutura de Arquivos
 ```
 B77-auto-parts/
