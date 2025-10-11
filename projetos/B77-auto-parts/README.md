@@ -1,6 +1,4 @@
-# 🚗 B77 Auto Parts
-
-E-commerce de peças automotivas desenvolvido para a empresa onde trabalho, com catálogo de produtos e layout responsivo.
+- 🚗 **B77 Auto Parts** - Sistema de e-commerce (Em Desenvolvimento)
 
 ## 📸 Preview
 
