@@ -1,8 +1,8 @@
 - 🚗 **B77 Auto Parts** - Sistema de e-commerce (Em Desenvolvimento)
 
 ## 📸 Preview
-
-![Screenshot do projeto](https://github.com/Luiz-9858/Portf-lio-simples-com-formul-rio/blob/main/projetos/B77-auto-parts/Captura%20de%20tela%202025-10-11%20154600.png)
+### Página Inicial
+![Home Page](https://github.com/Luiz-9858/Portf-lio-simples-com-formul-rio/blob/main/projetos/B77-auto-parts/Captura%20de%20tela%202025-10-11%20154600.png)
 
 
 ## 🎯 Objetivo do Projeto
