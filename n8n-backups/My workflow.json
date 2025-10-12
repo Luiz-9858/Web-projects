@@ -1,0 +1,31 @@
+{
+    "name": "My workflow",
+    "nodes": [
+        {
+            "parameters": {
+                "path": "/portfolio-contact",
+                "options": {}
+            },
+            "type": "n8n-nodes-base.webhook",
+            "typeVersion": 2.1,
+            "position": [
+                250,
+                300
+            ],
+            "id": "57cc668e-4513-472b-a92e-a078eda87bc3",
+            "name": "Webhook",
+            "webhookId": "c9182fe8-ccee-42bb-a910-674ab1717d3e"
+        }
+    ],
+    "pinData": {},
+    "connections": {},
+    "active": true,
+    "settings": {
+        "executionOrder": "v1"
+    },
+    "versionId": "add418e3-16e5-44aa-a382-f151ca166cb2",
+    "meta": {
+        "instanceId": "554a995bdc538468bfa8a06f1dfe988c72a466edc2f18623982a390f17983c4"
+    },
+    "id": "DHC+jX10VNJtjmpr"
+}
