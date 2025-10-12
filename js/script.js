@@ -1,45 +1,54 @@
-// Script para o formulário
-        document.getElementById('contato-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const form = this;
-            const submitBtn = form.querySelector('.submit-btn');
-            const statusMessage = document.getElementById('status-message');
-            
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'Enviando...';
-            
-             fetch('https://puff-remade9858.app.n6n.cloud/webhook/portfolio-contact', {
-                method: 'POST',
-                headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            nome: document.querySelector('[name="nome"]').value,
-            email: document.querySelector('[name="email"]').value,
-            mensagem: document.querySelector('[name="mensagem"]').value
-        })
-            })
-            .then(response => {
-                if (response.ok) {
-                    statusMessage.className = 'status-message status-success';
-                    statusMessage.textContent = 'Mensagem enviada com sucesso!';
-                    statusMessage.style.display = 'block';
-                    form.reset();
-                } else {
-                    throw new Error('Erro no envio');
-                }
-            })
-            .catch(error => {
-                statusMessage.className = 'status-message status-error';
-                statusMessage.textContent = 'Erro ao enviar mensagem. Tente novamente.';
-                statusMessage.style.display = 'block';
-            })
-            .finally(() => {
+document.getElementById('contato-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const form = this;
+    const submitBtn = form.querySelector('.submit-btn');
+    const statusMessage = document.getElementById('status-messagem');
+    
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando...';
+    
+    // 🔥 DADOS CORRETOS:
+    const dados = {
+        nome: document.querySelector('[name="nome"]').value,
+        email: document.querySelector('[name="email"]').value,
+        assunto: document.querySelector('[name="assunto"]').value,
+        mensagem: document.querySelector('[name="mensagem"]').value
+    };
+
+    // 🔥 URL CORRETA - VERIFIQUE NO n8n SE É ESTA MESMA:
+    const urlCorreta = 'https://luizfernando9858.app.n8n.cloud/webhook/portfolio-contact';
+    
+    // Converter dados para parâmetros de URL
+    const params = new URLSearchParams(dados).toString();
+    
+    // 🔥 URL COM PROXY - SINTAXE CORRETA:
+    const urlComProxy = `https://corsproxy.io/?${encodeURIComponent(urlCorreta + '?' + params)}`;
+    
+    fetch(urlComProxy, {
+        method: 'GET'
+    })
+    .then(response => {
+        if (response.ok) {
+            statusMessage.className = 'status-message status-success';
+            statusMessage.textContent = 'Mensagem enviada com sucesso!';
+            statusMessage.style.display = 'block';
+            form.reset();
+        } else {
+            throw new Error('Erro no envio');
+        }
+    })
+    .catch(error => {
+        statusMessage.className = 'status-message status-error';
+        statusMessage.textContent = 'Erro ao enviar mensagem. Tente novamente.';
+        statusMessage.style.display = 'block';
+    })
+    .finally(() => {
         submitBtn.disabled = false;
         submitBtn.textContent = 'Enviar Mensagem';
-            });
-        });
+    });
+});
+        
 
         // Animação das barras de habilidade
         const observerOptions = {
