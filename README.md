@@ -6,6 +6,33 @@ Bem-vindo ao meu portfólio! Aqui estão reunidos meus projetos de desenvolvimen
 
 Estou desenvolvendo esses projetos aos poucos, aplicando conceitos de forma gradual para realmente entender cada detalhe. Nada de copiar tudo de uma vez - a ideia é aprender fazendo! 💪
 
+---
+
+## 🔥 Projeto em Destaque
+
+### 💇 [Meu portfólio](./projetos/salao-beleza)
+Meu primeiro portfólio desenvolvido para mostrar meus trabalhos.
+- **Tecnologias:** HTML, CSS, Design responsivo
+- **Status:** ✅ Concluído
+- **Destaques:** Design minimalista
+
+
+#### ✨ Funcionalidades Implementadas:
+- ✅ **Sistema de contato automatizado** com processamento em tempo real
+- ✅ **Integração front-end + back-end** via webhooks
+- ✅ **Automação profissional** com workflows n8n
+- ✅ **Resolução de desafios técnicos:** CORS, debugging, integração de APIs
+
+#### 🚀 O que demonstra:
+- Habilidade em conectar interfaces com sistemas de automação
+- Capacidade de resolver problemas complexos de integração
+- Conhecimento em consumo de APIs e webhooks
+- Persistência em debugging e resolução de erros
+
+**Link do projeto:** [luiz-silva-portfolio.netlify.app](https://luiz-silva-portfolio.netlify.app)
+
+--- 
+
 ## 📂 Projetos
 
 ### 🚗 [B77 Auto Parts](./projetos/B77-auto-parts)
@@ -14,7 +41,7 @@ E-commerce de peças automotivas que estou desenvolvendo para a empresa onde tra
 - **Status:** 🟡 Em desenvolvimento
 - **Destaques:** Layout adaptável para mobile, catálogo de produtos
 
----
+--
 
 ### 🦷 [Consultório Odontológico](./projetos/consutorio-odontologico)
 Landing page profissional para consultório odontológico.
@@ -22,7 +49,7 @@ Landing page profissional para consultório odontológico.
 - **Status:** 🔴 Pausado
 - **Destaques:** Design clean e profissional
 
----
+--
 
 ### 🥖 [Padaria](./projetos/padaria)
 Site institucional para padaria local.
@@ -30,7 +57,7 @@ Site institucional para padaria local.
 - **Status:** ✅ Concluído
 - **Destaques:** Visual acolhedor e apetitoso
 
----
+--
 
 ### 💪 [Personal Trainer](./projetos/personal-trainer)
 Landing page para serviços de personal trainer.
@@ -38,7 +65,7 @@ Landing page para serviços de personal trainer.
 - **Status:** 🔴 Pausado
 - **Destaques:** Layout motivacional e objetivo
 
----
+--
 
 ### 💇 [Salão de Beleza](./projetos/salao-beleza)
 Site para salão de beleza com portfólio de serviços.
@@ -48,12 +75,6 @@ Site para salão de beleza com portfólio de serviços.
 
 ---
 
-### 💇 [Meu portfólio](./projetos/salao-beleza)
-Meu primeiro portfólio desenvolvido para mostrar meus trabalhos.
-- **Tecnologias:** HTML, CSS, Design responsivo
-- **Status:** ✅ Concluído
-- **Destaques:** Design minimalista
-
 ## 🛠️ Tecnologias Utilizadas
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
@@ -61,6 +82,7 @@ Meu primeiro portfólio desenvolvido para mostrar meus trabalhos.
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![n8n](https://img.shields.io/badge/n8n-000000?style=for-the-badge&logo=n8n&logoColor=white)
 
 ## 📚 O que estou aprendendo
 
