@@ -9,9 +9,16 @@
             submitBtn.disabled = true;
             submitBtn.textContent = 'Enviando...';
             
-            fetch(form.action, {
+             fetch('https://puff-remade9858.app.n6n.cloud/webhook/portfolio-contact', {
                 method: 'POST',
-                body: new FormData(form)
+                headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            nome: document.querySelector('[name="nome"]').value,
+            email: document.querySelector('[name="email"]').value,
+            mensagem: document.querySelector('[name="mensagem"]').value
+        })
             })
             .then(response => {
                 if (response.ok) {
@@ -29,11 +36,8 @@
                 statusMessage.style.display = 'block';
             })
             .finally(() => {
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Enviar mensagem';
-                setTimeout(() => {
-                    statusMessage.style.display = 'none';
-                }, 5000);
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Enviar Mensagem';
             });
         });
 
