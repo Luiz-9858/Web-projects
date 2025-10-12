@@ -8,7 +8,6 @@ document.getElementById('contato-form').addEventListener('submit', function(e) {
     submitBtn.disabled = true;
     submitBtn.textContent = 'Enviando...';
     
-    // 🔥 DADOS CORRETOS:
     const dados = {
         nome: document.querySelector('[name="nome"]').value,
         email: document.querySelector('[name="email"]').value,
@@ -16,13 +15,11 @@ document.getElementById('contato-form').addEventListener('submit', function(e) {
         mensagem: document.querySelector('[name="mensagem"]').value
     };
 
-    // 🔥 URL CORRETA - VERIFIQUE NO n8n SE É ESTA MESMA:
     const urlCorreta = 'https://luizfernando9858.app.n8n.cloud/webhook/portfolio-contact';
     
     // Converter dados para parâmetros de URL
     const params = new URLSearchParams(dados).toString();
     
-    // 🔥 URL COM PROXY - SINTAXE CORRETA:
     const urlComProxy = `https://corsproxy.io/?${encodeURIComponent(urlCorreta + '?' + params)}`;
     
     fetch(urlComProxy, {
