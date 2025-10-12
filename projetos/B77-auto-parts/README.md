@@ -1,10 +1,9 @@
-# 🚗 B77 Auto Parts
+- 🚗 **B77 Auto Parts** - Sistema de e-commerce (Em Desenvolvimento)
 
-E-commerce de peças automotivas desenvolvido para a empresa onde trabalho, com catálogo de produtos e layout responsivo.
+## 📸 Screenshots
 
-## 📸 Preview
-
-![Screenshot do projeto](https://github.com/Luiz-9858/Portf-lio-simples-com-formul-rio/blob/main/projetos/B77-auto-parts/screenshot.png?raw=true)
+### 🏠 Página Inicial
+<img src="https://github.com/Luiz-9858/Portf-lio-simples-com-formul-rio/blob/main/projetos/B77-auto-parts/home-page.png" alt="Página Inicial" width="800">
 
 
 ## 🎯 Objetivo do Projeto
@@ -25,6 +24,16 @@ Criar um site profissional de e-commerce para venda de peças automotivas, aplic
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+
+
+## 🇺🇸 English
+
+Complete e-commerce system for auto parts store.
+
+### Technologies:
+- HTML5, CSS3, JavaScript
+- Responsive Design
+- Modern and professional interface
 
 ## 📂 Estrutura de Arquivos
 ```
