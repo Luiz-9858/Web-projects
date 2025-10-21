@@ -16,7 +16,7 @@ document.getElementById('contato-form').addEventListener('submit', function(e) {
 };
 
 // ✅ URL LOCAL do n8n
-const urlLocal = 'http://localhost:5678/webhook-test/portfolio-contact';
+const urlLocal = 'http://localhost:5678/webhook/portfolio-contact';
 
 // Requisição DIRETA
 // Requisição DIRETA com POST
