@@ -18,12 +18,12 @@
     <!-- Main Header -->
     <header class="header-main">
         <div class="container">
-            <div class="logo">🔧 B77 AUTO PARTS</div>
-            
-            <div class="search-box">
-                <input type="search" placeholder="Busque por peças, marcas ou veículos...">
-                <button>🔍</button>
-            </div>
+            <a href="/" class="logo" aria-label="B77 Auto Parts">🚘 B77 AUTO PARTS</a>
+
+            <form class="search-box" action="/search" method="get" role="search">
+                <input type="search" name="q" placeholder="Busque por peças, marcas ou veículos..." aria-label="Pesquisar">
+                <button type="submit" aria-label="Buscar">🔍</button>
+            </form>
 
             <div class="user-actions">
                 <a href="#">
