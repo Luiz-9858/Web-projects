@@ -1,6 +1,6 @@
 function toggleMenu() {
   const navMenu = document.getElementById("navMenu");
-  navMenu.style.display === "flex" ? "none" : "flex";
+  navMenu.style.display = navMenu.style.display === "flex" ? "none" : "flex";
 }
 
 // Adicione um listener para fechar o menu ao clicar fora dele
