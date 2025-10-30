@@ -211,6 +211,10 @@ body {
   display: block;
 }
 
+.feature-card:hover .icon {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
 /* Products */
 .products {
   padding: 60px 20px;
