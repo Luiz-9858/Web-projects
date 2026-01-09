@@ -1,6 +1,6 @@
 # 💼 Portfólio de Projetos Web
 
-Bem-vindo ao meu portfólio! Aqui estão reunidos meus projetos de desenvolvimento front-end, criados para prática, aprendizado e aplicação no mundo real.
+Bem-vindo ao meu portfólio! Aqui estão reunidos meus projetos de desenvolvimento fullstack, criados para prática, aprendizado e aplicação no mundo real.
 
 ## 🎯 Sobre
 
@@ -11,19 +11,22 @@ Estou desenvolvendo esses projetos aos poucos, aplicando conceitos de forma grad
 ## 🔥 Projeto em Destaque
 
 ### 💇 [Meu portfólio](./projetos/salao-beleza)
+
 Meu primeiro portfólio desenvolvido para mostrar meus trabalhos.
+
 - **Tecnologias:** HTML, CSS, Design responsivo
 - **Status:** ✅ Concluído
 - **Destaques:** Design minimalista
 
-
 #### ✨ Funcionalidades Implementadas:
+
 - ✅ **Sistema de contato automatizado** com processamento em tempo real
 - ✅ **Integração front-end + back-end** via webhooks
 - ✅ **Automação profissional** com workflows n8n
 - ✅ **Resolução de desafios técnicos:** CORS, debugging, integração de APIs
 
 #### 🚀 O que demonstra:
+
 - Habilidade em conectar interfaces com sistemas de automação
 - Capacidade de resolver problemas complexos de integração
 - Conhecimento em consumo de APIs e webhooks
@@ -31,12 +34,14 @@ Meu primeiro portfólio desenvolvido para mostrar meus trabalhos.
 
 **Link do projeto:** [luiz-silva-portfolio.netlify.app](https://luiz-silva-portfolio.netlify.app)
 
---- 
+---
 
 ## 📂 Projetos
 
 ### 🚗 [B77 Auto Parts](./projetos/B77-auto-parts)
+
 E-commerce de peças automotivas que estou desenvolvendo para a empresa onde trabalho.
+
 - **Tecnologias:** HTML5, CSS3, Design Responsivo
 - **Status:** 🟡 Em desenvolvimento
 - **Destaques:** Layout adaptável para mobile, catálogo de produtos
@@ -44,7 +49,9 @@ E-commerce de peças automotivas que estou desenvolvendo para a empresa onde tra
 --
 
 ### 🦷 [Consultório Odontológico](./projetos/consutorio-odontologico)
+
 Landing page profissional para consultório odontológico.
+
 - **Tecnologias:** HTML, CSS
 - **Status:** 🔴 Pausado
 - **Destaques:** Design clean e profissional
@@ -52,7 +59,9 @@ Landing page profissional para consultório odontológico.
 --
 
 ### 🥖 [Padaria](./projetos/padaria)
+
 Site institucional para padaria local.
+
 - **Tecnologias:** HTML, CSS, Design responsivo
 - **Status:** ✅ Concluído
 - **Destaques:** Visual acolhedor e apetitoso
@@ -60,7 +69,9 @@ Site institucional para padaria local.
 --
 
 ### 💪 [Personal Trainer](./projetos/personal-trainer)
+
 Landing page para serviços de personal trainer.
+
 - **Tecnologias:** HTML, CSS
 - **Status:** 🔴 Pausado
 - **Destaques:** Layout motivacional e objetivo
@@ -68,7 +79,9 @@ Landing page para serviços de personal trainer.
 --
 
 ### 💇 [Salão de Beleza](./projetos/salao-beleza)
+
 Site para salão de beleza com portfólio de serviços.
+
 - **Tecnologias:** HTML, CSS
 - **Status:** 🔴 Pausado
 - **Destaques:** Design elegante e feminino
@@ -97,6 +110,7 @@ Site para salão de beleza com portfólio de serviços.
 ## 🎓 Metodologia
 
 Cada projeto é desenvolvido com foco em:
+
 - ✅ Código limpo e organizado
 - ✅ Responsividade mobile-first
 - ✅ Acessibilidade básica
@@ -115,13 +129,13 @@ Cada projeto é desenvolvido com foco em:
 
 Se quiser trocar uma ideia sobre os projetos ou desenvolvimento web, me chama!
 
-📧 **Email:** luizfernandodev@gmail.com  
-💼 **LinkedIn:** [luiz-fernand0-silva](https://linkedin.com/in/luiz-fernand0-silva)  
+📧 **Email:** luizfernandodev16@gmail.com  
+💼 **LinkedIn:** [luiz-fernand0-silva](https://linkedin.com/in/luiz-fernando-fullstack)  
 🐙 **GitHub:** [@Luiz-9858](https://github.com/Luiz-9858)  
-📸 **Instagram:** [lui.zfernand00](https://instagram.com/lui.zfernand00)
+📸 **Instagram:** [lui.zfernand00](https://instagram.com/lfcodes)
 
 ---
 
-**Última atualização:** Outubro/2025
+**Última atualização:** Janeiro/2026
 
-*"Aprendendo um commit de cada vez"* 🚀
+_"Aprendendo um commit de cada vez"_ 🚀
