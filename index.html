@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="imagens/favicon-32x32.png" type="image/x-icon">
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -37,11 +39,14 @@
         <div class="container">
             <h2 class="section-title">Sobre</h2>
             <div class="about-content">
-                <img src="imagens/icone-portfolio.jpg" alt="Luiz Fernando" class="profile-image">
+                <img src="imagens/portfolio.png" alt="Luiz Fernando" class="profile-image">
                 <div class="about-text">
-                    <p>Desenvolvedor junior especializado em landing pages e sites institucionais, focado em criar experiências digitais funcionais e elegantes.</p>
-                    <p>Atualmente aprofundando conhecimentos em HTML5, CSS3 e JavaScript, sempre buscando soluções simples e eficazes.</p>
-                    <p>Quando não estou codando, dedico tempo aos estudos de inglês, leitura e atividades ao ar livre.</p>
+                    <p>Desenvolvedor junior especializado em landing pages e sites institucionais, focado em criar
+                        experiências digitais funcionais e elegantes.</p>
+                    <p>Atualmente aprofundando conhecimentos em HTML5, CSS3 e JavaScript, sempre buscando soluções
+                        simples e eficazes.</p>
+                    <p>Quando não estou codando, dedico tempo aos estudos de inglês, leitura e atividades ao ar livre.
+                    </p>
                 </div>
             </div>
         </div>
@@ -120,49 +125,52 @@
     </section>
 
     <!-- Seção de Contato -->
-<section id="contato" class="contact-section">
-    <div class="container">
-        <h2 class="section-title">Contato</h2>
-        <div class="form-container">
-            <!-- ❌ ERRADO: </form id="contato-form"> -->
-            <!-- ✅ CORRETO: -->
-            <form id="contato-form">
-                <div class="form-group">
-                    <label for="nome">Nome</label>
-                    <!-- Mude name="name" para name="nome" -->
-                    <input type="text" id="nome" name="nome" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="assunto">Assunto</label>
-                    <input type="text" id="assunto" name="assunto" required>
-                </div>
-                <div class="form-group">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Enviar mensagem</button>
-                <div id="status-messagem" class="status-message"></div>
-            </form> <!-- ✅ FECHA A TAG FORM CORRETAMENTE -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <div class="form-container">
+                <!-- ❌ ERRADO: </form id="contato-form"> -->
+                <!-- ✅ CORRETO: -->
+                <form id="contato-form">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <!-- Mude name="name" para name="nome" -->
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto">Assunto</label>
+                        <input type="text" id="assunto" name="assunto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar mensagem</button>
+                    <div id="status-messagem" class="status-message"></div>
+                </form> <!-- ✅ FECHA A TAG FORM CORRETAMENTE -->
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="contact-links">
                 <a href="mailto:luizfernandodev16@gmail.com">Email</a>
-                <a href="https://www.linkedin.com/in/luiz-fernando-9747922b7/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/luiz-fernando-9747922b7/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
                 <a href="https://github.com/Luiz-9858" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://api.whatsapp.com/send?phone=5514988009858&text=Olá!%20Vi%20seu%20portfólio%20online." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                <a href="https://api.whatsapp.com/send?phone=5514988009858&text=Olá!%20Vi%20seu%20portfólio%20online."
+                    target="_blank" rel="noopener noreferrer">WhatsApp</a>
             </div>
             <p class="copyright">&copy; 2025 Luiz Fernando da Silva</p>
         </div>
     </footer>
     <script src="js/script.js"></script>
 </body>
+
 </html>
