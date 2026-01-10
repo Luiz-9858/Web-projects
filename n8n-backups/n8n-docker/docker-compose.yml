@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   postgres:
@@ -11,7 +11,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ['CMD-SHELL', 'pg_isready -h localhost -U n8n']
+      test: ["CMD-SHELL", "pg_isready -h localhost -U n8n"]
       interval: 5s
       timeout: 5s
       retries: 10
@@ -35,6 +35,8 @@ services:
       - N8N_PORT=5678
       - N8N_PROTOCOL=http
       - WEBHOOK_URL=http://localhost:5678/
+      - N8N_CORS_ENABLED=true
+      - N8N_CORS_ALLOW_ORIGIN=*
     volumes:
       - n8n_data:/home/node/.n8n
     depends_on:
