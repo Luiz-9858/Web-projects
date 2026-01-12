@@ -75,6 +75,9 @@
     <!-- 2. VARIABLES: Define tokens de design (cores, espaçamentos, etc) -->
     <link rel="stylesheet" href="css/variables.css">
 
+    <!-- 2.5. SOBRE: Seção Sobre modernizada -->
+    <link rel="stylesheet" href="css/sobre.css">
+
     <!-- 3. STYLE: Seus estilos principais (será atualizado depois) -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -274,20 +277,137 @@
     </nav>
 
     <!-- Seção Sobre -->
-    <section id="sobre">
+    <!-- SEÇÃO SOBRE - SUBSTITUIR NO index.html -->
+    <section id="sobre" class="about-section">
         <div class="container">
-            <h2 class="section-title">Sobre</h2>
+            <!-- Header da Seção -->
+            <div class="section-header">
+                <span class="section-badge">Conheça mais</span>
+                <h2 class="section-title">Sobre Mim</h2>
+                <p class="section-subtitle">Desenvolvedor apaixonado por criar experiências digitais incríveis</p>
+            </div>
+
+            <!-- Conteúdo Principal -->
             <div class="about-content">
-                <img src="imagens/portfolio.png" alt="Luiz Fernando" class="profile-image">
-                <div class="about-text">
-                    <p>Desenvolvedor junior especializado em landing pages e sites institucionais, focado em criar
-                        experiências digitais funcionais e elegantes.</p>
-                    <p>Atualmente aprofundando conhecimentos em HTML5, CSS3 e JavaScript, sempre buscando soluções
-                        simples e eficazes.</p>
-                    <p>Quando não estou codando, dedico tempo aos estudos de inglês, leitura e atividades ao ar livre.
-                    </p>
+                <!-- Card de Foto -->
+                <div class="about-image-wrapper">
+                    <div class="image-decoration"></div>
+                    <div class="image-container">
+                        <img src="images/portfolio.png" alt="Luiz Fernando - Desenvolvedor Front-end"
+                            class="about-image">
+                        <div class="image-gradient-overlay"></div>
+                    </div>
+                    <!-- Stats Visuais -->
+                    <div class="image-stats">
+                        <div class="stat-badge">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Anos</span>
+                        </div>
+                        <div class="stat-badge">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Projetos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Informações -->
+                <div class="about-info">
+                    <div class="info-card glass-card">
+                        <!-- Intro -->
+                        <div class="about-intro">
+                            <h3 class="gradient-text">Olá! Eu sou Luiz Fernando</h3>
+                            <p class="intro-text">
+                                Desenvolvedor Front-end com foco em criar interfaces modernas,
+                                responsivas e otimizadas. Transformo ideias em experiências
+                                digitais funcionais e visualmente atraentes.
+                            </p>
+                        </div>
+
+                        <!-- Descrição Detalhada -->
+                        <div class="about-description">
+                            <p>
+                                Minha jornada no desenvolvimento web começou com a curiosidade
+                                de entender como os sites funcionam. Hoje, trabalho com
+                                <strong>HTML5</strong>, <strong>CSS3</strong> e <strong>JavaScript</strong>
+                                para construir aplicações que fazem a diferença.
+                            </p>
+                            <p>
+                                Tenho experiência em integração com APIs, automação de
+                                processos com n8n, e sempre busco aplicar as melhores
+                                práticas de desenvolvimento e acessibilidade.
+                            </p>
+                        </div>
+
+                        <!-- Highlights -->
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">🎯</div>
+                                <div class="highlight-content">
+                                    <h4>Foco em Qualidade</h4>
+                                    <p>Código limpo, semântico e performático</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">🚀</div>
+                                <div class="highlight-content">
+                                    <h4>Sempre Aprendendo</h4>
+                                    <p>Atualizado com as últimas tecnologias</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">💡</div>
+                                <div class="highlight-content">
+                                    <h4>Soluções Criativas</h4>
+                                    <p>Problemas complexos, respostas eficientes</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Button -->
+                        <div class="about-cta">
+                            <a href="#contato" class="btn btn-primary">
+                                <span>Vamos Conversar</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L12 6M16 10L12 14" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="https://github.com/Luiz-9858" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-secondary">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                </svg>
+                                <span>Ver GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Info Cards Extras -->
+                    <div class="extra-info-cards">
+                        <div class="mini-card glass-card">
+                            <div class="mini-card-icon">📍</div>
+                            <div class="mini-card-content">
+                                <span class="mini-card-label">Localização</span>
+                                <span class="mini-card-value">Bauru, SP</span>
+                            </div>
+                        </div>
+                        <div class="mini-card glass-card">
+                            <div class="mini-card-icon">💼</div>
+                            <div class="mini-card-content">
+                                <span class="mini-card-label">Status</span>
+                                <span class="mini-card-value">Disponível</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Background Decorativo -->
+        <div class="about-bg-decoration">
+            <div class="decoration-orb orb-1"></div>
+            <div class="decoration-orb orb-2"></div>
         </div>
     </section>
 
