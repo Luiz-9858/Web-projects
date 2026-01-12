@@ -2,35 +2,273 @@
 <html lang="pt-BR">
 
 <head>
+    <!-- ========================================
+         META TAGS BÁSICAS
+         ======================================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luiz Fernando - Desenvolvedor</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- ========================================
+         SEO E REDES SOCIAIS
+         ======================================== -->
+    <title>Luiz Fernando - Desenvolvedor Front-End | Portfólio</title>
+    <meta name="description"
+        content="Desenvolvedor Front-End júnior especializado em HTML, CSS, JavaScript e automação com n8n. Confira meus projetos e entre em contato!">
+    <meta name="keywords"
+        content="desenvolvedor front-end, portfolio, HTML, CSS, JavaScript, n8n, automação, web developer">
+    <meta name="author" content="Luiz Fernando da Silva">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Luiz Fernando - Desenvolvedor Front-End">
+    <meta property="og:description"
+        content="Desenvolvedor Front-End júnior especializado em criar experiências web modernas e automatizadas.">
+    <meta property="og:image" content="https://luiz-silva-portfolio.netlify.app/images/portfolio.png">
+    <meta property="og:url" content="https://luiz-silva-portfolio.netlify.app">
+    <meta property="og:site_name" content="Luiz Fernando Portfolio">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Luiz Fernando - Desenvolvedor Front-End">
+    <meta name="twitter:description"
+        content="Desenvolvedor Front-End júnior especializado em criar experiências web modernas e automatizadas.">
+    <meta name="twitter:image" content="https://luiz-silva-portfolio.netlify.app/images/portfolio.png">
+
+    <!-- ========================================
+         FAVICON
+         ======================================== -->
+    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-32x32.png">
+
+    <!-- ========================================
+         PRECONNECT PARA PERFORMANCE
+         ======================================== -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- CDN de ícones -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- ========================================
+         FONTES MODERNAS (Google Fonts)
+         ======================================== -->
+    <!-- 
+        Inter: Fonte principal para textos
+        Plus Jakarta Sans: Fonte para headings (títulos)
+        JetBrains Mono: Fonte monoespaçada para código
+        
+        Pesos incluídos: 400, 500, 600, 700, 800
+    -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ========================================
+         CSS - ORDEM DE CARREGAMENTO IMPORTA!
+         ======================================== -->
+    <!-- 1. RESET: Remove estilos padrão dos navegadores -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- 2. VARIABLES: Define tokens de design (cores, espaçamentos, etc) -->
+    <link rel="stylesheet" href="css/variables.css">
+
+    <!-- 3. STYLE: Seus estilos principais (será atualizado depois) -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="imagens/favicon-32x32.png" type="image/x-icon">
+
+    <!-- 4. FORM MESSAGES: Estilos de feedback do formulário -->
     <link rel="stylesheet" href="css/form-messages.css">
+
+    <!-- 5. ANIMATIONS: Animações customizadas (será criado depois) -->
+    <!-- <link rel="stylesheet" href="css/animations.css"> -->
+
+    <!-- 6. DARK MODE: Estilos do tema escuro (será criado depois) -->
+    <!-- <link rel="stylesheet" href="css/dark-mode.css"> -->
+
+    <!-- ========================================
+         ÍCONES (Font Awesome)
+         ======================================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- ========================================
+         BIBLIOTECAS DE ANIMAÇÃO (opcional - descomentar quando precisar)
+         ======================================== -->
+    <!-- AOS - Animate On Scroll -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+
+    <!-- ========================================
+         THEME COLOR (cor da barra de navegação mobile)
+         ======================================== -->
+    <meta name="theme-color" content="#0a0e27">
+    <meta name="msapplication-navbutton-color" content="#0a0e27">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0a0e27">
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
+    <!-- ============================================
+     🎯 HERO SECTION - Primeira Impressão
+     ============================================
+     Substitui o <header> atual por esta versão moderna
+     ============================================ -->
+
+    <header class="hero" id="home">
+        <!-- Background com gradientes animados -->
+        <div class="hero-background">
+            <div class="hero-gradient-mesh"></div>
+            <div class="hero-gradient-orb hero-gradient-orb-1"></div>
+            <div class="hero-gradient-orb hero-gradient-orb-2"></div>
+            <div class="hero-gradient-orb hero-gradient-orb-3"></div>
+        </div>
+
         <div class="container">
-            <div class="header-content">
-                <h1>Luiz Fernando da Silva</h1>
-                <p>Desenvolvedor Front-end em Formação</p>
-                <a href="#projetos" class="cta-button">Ver Meus Trabalhos</a>
+            <div class="hero-content">
+                <!-- Badge/Tag superior -->
+                <span class="hero-tag">
+                    <i class="fas fa-code"></i>
+                    <span>Disponível para projetos</span>
+                </span>
+
+                <!-- Nome com gradient -->
+                <h1 class="hero-title">
+                    Olá, eu sou
+                    <span class="gradient-text">Luiz Fernando</span>
+                </h1>
+
+                <!-- Subtítulo com efeito typewriter (será animado via JS depois) -->
+                <p class="hero-subtitle">
+                    <span class="typewriter-text">Desenvolvedor Front-end em Formação</span>
+                    <span class="typewriter-cursor">|</span>
+                </p>
+
+                <!-- Descrição curta -->
+                <p class="hero-description">
+                    Especializado em criar <strong>experiências web modernas</strong> com HTML5, CSS3 e JavaScript.
+                    Transformo ideias em interfaces funcionais e elegantes.
+                </p>
+
+                <!-- Botões de CTA -->
+                <div class="hero-cta">
+                    <a href="#projetos" class="btn btn-primary">
+                        <span>Ver Meus Projetos</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contato" class="btn btn-secondary">
+                        <span>Entre em Contato</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+
+                <!-- Stats rápidos (opcional - pode remover se achar muito) -->
+                <div class="hero-stats">
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-number">5+</span>
+                        <span class="hero-stat-label">Projetos</span>
+                    </div>
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-number">2+</span>
+                        <span class="hero-stat-label">Anos Estudando</span>
+                    </div>
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-number">100%</span>
+                        <span class="hero-stat-label">Dedicação</span>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="hero-scroll-indicator">
+            <span>Role para baixo</span>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </header>
 
-    <!-- Navegação -->
-    <nav>
+
+    <!-- ============================================
+     🧭 NAVEGAÇÃO - Menu Fixo Moderno
+     ============================================
+     Substitui o <nav> atual
+     ============================================ -->
+
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <div class="nav-container">
-                <a href="#sobre">Sobre</a>
-                <a href="#habilidades">Habilidades</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#contato">Contato</a>
+            <div class="navbar-container">
+                <!-- Logo/Nome -->
+                <a href="#home" class="navbar-brand">
+                    <span class="navbar-logo">LF</span>
+                    <span class="navbar-name">Luiz Fernando</span>
+                </a>
+
+                <!-- Menu Desktop -->
+                <div class="navbar-menu">
+                    <a href="#sobre" class="navbar-link">
+                        <i class="fas fa-user"></i>
+                        <span>Sobre</span>
+                    </a>
+                    <a href="#habilidades" class="navbar-link">
+                        <i class="fas fa-code"></i>
+                        <span>Habilidades</span>
+                    </a>
+                    <a href="#projetos" class="navbar-link">
+                        <i class="fas fa-folder-open"></i>
+                        <span>Projetos</span>
+                    </a>
+                    <a href="#contato" class="navbar-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contato</span>
+                    </a>
+                </div>
+
+                <!-- Dark Mode Toggle (será implementado depois) -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <!-- Menu Mobile Hamburger -->
+                <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
+                    <span class="navbar-toggle-icon"></span>
+                    <span class="navbar-toggle-icon"></span>
+                    <span class="navbar-toggle-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile (overlay) -->
+        <div class="navbar-mobile" id="navbar-mobile">
+            <div class="navbar-mobile-content">
+                <a href="#sobre" class="navbar-mobile-link">
+                    <i class="fas fa-user"></i>
+                    <span>Sobre</span>
+                </a>
+                <a href="#habilidades" class="navbar-mobile-link">
+                    <i class="fas fa-code"></i>
+                    <span>Habilidades</span>
+                </a>
+                <a href="#projetos" class="navbar-mobile-link">
+                    <i class="fas fa-folder-open"></i>
+                    <span>Projetos</span>
+                </a>
+                <a href="#contato" class="navbar-mobile-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contato</span>
+                </a>
+
+                <!-- Links sociais no menu mobile -->
+                <div class="navbar-mobile-socials">
+                    <a href="https://github.com/Luiz-9858" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/luiz-fernando-9747922b7/" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:luizfernandodev16@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
