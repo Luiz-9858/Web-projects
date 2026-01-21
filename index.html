@@ -2,16 +2,11 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- ========================================
-         META TAGS BÁSICAS
-         ======================================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- ========================================
-         SEO E REDES SOCIAIS
-         ======================================== -->
+    <!-- SEO -->
     <title>Luiz Fernando - Desenvolvedor Full-Stack | Portfólio</title>
     <meta name="description"
         content="Desenvolvedor Full-Stack especializado em HTML, CSS, JavaScript e automação com n8n. Confira meus projetos e entre em contato!">
@@ -20,7 +15,7 @@
     <meta name="author" content="Luiz Fernando da Silva">
     <meta name="robots" content="index, follow">
 
-    <!-- Open Graph (Facebook, LinkedIn) -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Luiz Fernando - Desenvolvedor Full-Stack">
     <meta property="og:description"
@@ -31,180 +26,51 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Luiz Fernando - Desenvolvedor Front-End">
+    <meta name="twitter:title" content="Luiz Fernando - Desenvolvedor Full-Stack">
     <meta name="twitter:description"
-        content="Desenvolvedor Front-End júnior especializado em criar experiências web modernas e automatizadas.">
+        content="Desenvolvedor Full-Stack especializado em criar experiências web modernas e automatizadas.">
     <meta name="twitter:image" content="https://luiz-silva-portfolio.netlify.app/images/portfolio.png">
 
-    <!-- ========================================
-         FAVICON
-         ======================================== -->
+    <!-- Favicon -->
     <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-32x32.png">
 
-    <!-- ========================================
-         PRECONNECT PARA PERFORMANCE
-         ======================================== -->
-    <!-- Google Fonts -->
+    <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- CDN de ícones -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-    <!-- ========================================
-         FONTES MODERNAS (Google Fonts)
-         ======================================== -->
-    <!-- 
-        Inter: Fonte principal para textos
-        Plus Jakarta Sans: Fonte para headings (títulos)
-        JetBrains Mono: Fonte monoespaçada para código
-        
-        Pesos incluídos: 400, 500, 600, 700, 800
-    -->
+    <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- ========================================
-         CSS - ORDEM DE CARREGAMENTO IMPORTA!
-         ======================================== -->
-    <!-- 1. RESET: Remove estilos padrão dos navegadores -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css">
-
-    <!-- 2. VARIABLES: Define tokens de design (cores, espaçamentos, etc) -->
     <link rel="stylesheet" href="css/variables.css">
-
-    <!-- 2.5. SOBRE: Seção Sobre modernizada -->
-    <link rel="stylesheet" href="css/sobre.css">
-
-    <!-- 3. STYLE: Seus estilos principais (será atualizado depois) -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- 4. FORM MESSAGES: Estilos de feedback do formulário -->
+    <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/form-messages.css">
 
-    <!-- 5. ANIMATIONS: Animações customizadas (será criado depois) -->
-    <!-- <link rel="stylesheet" href="css/animations.css"> -->
-
-    <!-- 6. DARK MODE: Estilos do tema escuro (será criado depois) -->
-    <!-- <link rel="stylesheet" href="css/dark-mode.css"> -->
-
-    <!-- ========================================
-         ÍCONES (Font Awesome)
-         ======================================== -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- ========================================
-         BIBLIOTECAS DE ANIMAÇÃO (opcional - descomentar quando precisar)
-         ======================================== -->
-    <!-- AOS - Animate On Scroll -->
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
-
-    <!-- ========================================
-         THEME COLOR (cor da barra de navegação mobile)
-         ======================================== -->
+    <!-- Theme Color -->
     <meta name="theme-color" content="#0a0e27">
     <meta name="msapplication-navbutton-color" content="#0a0e27">
     <meta name="apple-mobile-web-app-status-bar-style" content="#0a0e27">
 </head>
 
 <body>
-    <!-- ============================================
-     🎯 HERO SECTION - Primeira Impressão
-     ============================================
-     Substitui o <header> atual por esta versão moderna
-     ============================================ -->
-
-    <header class="hero" id="home">
-        <!-- Background com gradientes animados -->
-        <div class="hero-background">
-            <div class="hero-gradient-mesh"></div>
-            <div class="hero-gradient-orb hero-gradient-orb-1"></div>
-            <div class="hero-gradient-orb hero-gradient-orb-2"></div>
-            <div class="hero-gradient-orb hero-gradient-orb-3"></div>
-        </div>
-
-        <div class="container">
-            <div class="hero-content">
-                <!-- Badge/Tag superior -->
-                <span class="hero-tag">
-                    <i class="fas fa-code"></i>
-                    <span>Disponível para projetos</span>
-                </span>
-
-                <!-- Nome com gradient -->
-                <h1 class="hero-title">
-                    Olá, eu sou
-                    <span class="gradient-text">Luiz Fernando</span>
-                </h1>
-
-                <!-- Subtítulo com efeito typewriter (será animado via JS depois) -->
-                <p class="hero-subtitle">
-                    <span class="typewriter-text">Desenvolvedor Full-Stack em Formação</span>
-                    <!-- <span class="typewriter-cursor">|</span> -->
-                </p>
-
-                <!-- Descrição curta -->
-                <p class="hero-description">
-                    Especializado em criar <strong>experiências web modernas</strong> com HTML5, CSS3 e JavaScript.
-                    Transformo ideias em interfaces funcionais e elegantes.
-                </p>
-
-                <!-- Botões de CTA -->
-                <div class="hero-cta">
-                    <a href="#projetos" class="btn btn-primary">
-                        <span>Ver Meus Projetos</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#contato" class="btn btn-secondary">
-                        <span>Entre em Contato</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </a>
-                </div>
-
-                <!-- Stats rápidos (opcional - pode remover se achar muito) -->
-                <div class="hero-stats">
-                    <div class="hero-stat-item">
-                        <span class="hero-stat-number">5+</span>
-                        <span class="hero-stat-label">Projetos</span>
-                    </div>
-                    <div class="hero-stat-item">
-                        <span class="hero-stat-number">2+</span>
-                        <span class="hero-stat-label">Anos Estudando</span>
-                    </div>
-                    <div class="hero-stat-item">
-                        <span class="hero-stat-number">100%</span>
-                        <span class="hero-stat-label">Dedicação</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Scroll indicator -->
-        <div class="hero-scroll-indicator">
-            <span>Role para baixo</span>
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </header>
-
-
-    <!-- ============================================
-     🧭 NAVEGAÇÃO - Menu Fixo Moderno
-     ============================================
-     Substitui o <nav> atual
-     ============================================ -->
-
+    <!-- NAVEGAÇÃO -->
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="navbar-container">
-                <!-- Logo/Nome -->
                 <a href="#home" class="navbar-brand">
                     <span class="navbar-logo">LF</span>
                     <span class="navbar-name">Luiz Fernando</span>
                 </a>
 
-                <!-- Menu Desktop -->
                 <div class="navbar-menu">
                     <a href="#sobre" class="navbar-link">
                         <i class="fas fa-user"></i>
@@ -224,12 +90,10 @@
                     </a>
                 </div>
 
-                <!-- Dark Mode Toggle (será implementado depois) -->
                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
                     <i class="fas fa-moon"></i>
                 </button>
 
-                <!-- Menu Mobile Hamburger -->
                 <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
                     <span class="navbar-toggle-icon"></span>
                     <span class="navbar-toggle-icon"></span>
@@ -238,7 +102,6 @@
             </div>
         </div>
 
-        <!-- Menu Mobile (overlay) -->
         <div class="navbar-mobile" id="navbar-mobile">
             <div class="navbar-mobile-content">
                 <a href="#sobre" class="navbar-mobile-link">
@@ -258,7 +121,6 @@
                     <span>Contato</span>
                 </a>
 
-                <!-- Links sociais no menu mobile -->
                 <div class="navbar-mobile-socials">
                     <a href="https://github.com/Luiz-9858" target="_blank" rel="noopener noreferrer"
                         aria-label="GitHub">
@@ -276,28 +138,88 @@
         </div>
     </nav>
 
-    <!-- Seção Sobre -->
-    <!-- SEÇÃO SOBRE - SUBSTITUIR NO index.html -->
+    <!-- HERO SECTION -->
+    <header class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-gradient-mesh"></div>
+            <div class="hero-gradient-orb hero-gradient-orb-1"></div>
+            <div class="hero-gradient-orb hero-gradient-orb-2"></div>
+            <div class="hero-gradient-orb hero-gradient-orb-3"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-tag">
+                    <i class="fas fa-code"></i>
+                    <span>Disponível para projetos</span>
+                </span>
+
+                <h1 class="hero-title">
+                    Olá, eu sou
+                    <span class="gradient-text">Luiz Fernando</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    <span class="typewriter-text">Desenvolvedor Full-Stack em Formação</span>
+                </p>
+
+                <p class="hero-description">
+                    Especializado em criar <strong>experiências web modernas</strong> com HTML5, CSS3 e JavaScript.
+                    Transformo ideias em interfaces funcionais e elegantes.
+                </p>
+
+                <div class="hero-cta">
+                    <a href="#projetos" class="btn btn-primary">
+                        <span>Ver Meus Projetos</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contato" class="btn btn-secondary">
+                        <span>Entre em Contato</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-number">5+</span>
+                        <span class="hero-stat-label">Projetos</span>
+                    </div>
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-number">2+</span>
+                        <span class="hero-stat-label">Anos Estudando</span>
+                    </div>
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-number">100%</span>
+                        <span class="hero-stat-label">Dedicação</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <span>Role para baixo</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- SEÇÃO SOBRE -->
     <section id="sobre" class="about-section">
         <div class="container">
-            <!-- Header da Seção -->
             <div class="section-header">
                 <span class="section-badge">Conheça mais</span>
                 <h2 class="section-title">Sobre Mim</h2>
                 <p class="section-subtitle">Desenvolvedor apaixonado por criar experiências digitais incríveis</p>
             </div>
 
-            <!-- Conteúdo Principal -->
             <div class="about-content">
-                <!-- Card de Foto -->
                 <div class="about-image-wrapper">
                     <div class="image-decoration"></div>
                     <div class="image-container">
-                        <img src="images/portfolio.png" alt="Luiz Fernando - Desenvolvedor Front-end"
+                        <img src="imagens/eu-circle.png" alt="Luiz Fernando - Desenvolvedor Front-end"
                             class="about-image">
                         <div class="image-gradient-overlay"></div>
                     </div>
-                    <!-- Stats Visuais -->
+
                     <div class="image-stats">
                         <div class="stat-badge">
                             <span class="stat-number">2+</span>
@@ -310,20 +232,16 @@
                     </div>
                 </div>
 
-                <!-- Card de Informações -->
                 <div class="about-info">
                     <div class="info-card glass-card">
-                        <!-- Intro -->
                         <div class="about-intro">
-                            <h3 class="gradient-text">Olá! Eu sou Luiz Fernando</h3>
+                            <h3 class="gradient-text">Desenvolvedor Fullstack</h3>
                             <p class="intro-text">
-                                Desenvolvedor Fullstack com foco em criar interfaces modernas,
-                                responsivas e otimizadas. Transformo ideias em experiências
-                                digitais funcionais e visualmente atraentes.
+                                Com foco em criar interfaces modernas, responsivas e otimizadas.
+                                Transformo ideias em experiências digitais funcionais e visualmente atraentes.
                             </p>
                         </div>
 
-                        <!-- Descrição Detalhada -->
                         <div class="about-description">
                             <p>
                                 Minha jornada no desenvolvimento web começou com a curiosidade
@@ -338,7 +256,6 @@
                             </p>
                         </div>
 
-                        <!-- Highlights -->
                         <div class="about-highlights">
                             <div class="highlight-item">
                                 <div class="highlight-icon">🎯</div>
@@ -363,7 +280,6 @@
                             </div>
                         </div>
 
-                        <!-- CTA Button -->
                         <div class="about-cta">
                             <a href="#contato" class="btn btn-primary">
                                 <span>Vamos Conversar</span>
@@ -383,7 +299,6 @@
                         </div>
                     </div>
 
-                    <!-- Info Cards Extras -->
                     <div class="extra-info-cards">
                         <div class="mini-card glass-card">
                             <div class="mini-card-icon">📍</div>
@@ -404,14 +319,13 @@
             </div>
         </div>
 
-        <!-- Background Decorativo -->
         <div class="about-bg-decoration">
             <div class="decoration-orb orb-1"></div>
             <div class="decoration-orb orb-2"></div>
         </div>
     </section>
 
-    <!-- Seção Habilidades -->
+    <!-- SEÇÃO HABILIDADES -->
     <section id="habilidades">
         <div class="container">
             <h2 class="section-title">Habilidades</h2>
@@ -448,7 +362,7 @@
         </div>
     </section>
 
-    <!-- Seção Projetos -->
+    <!-- SEÇÃO PROJETOS -->
     <section id="projetos">
         <div class="container">
             <h2 class="section-title">Projetos</h2>
@@ -483,17 +397,14 @@
         </div>
     </section>
 
-    <!-- Seção de Contato -->
+    <!-- SEÇÃO CONTATO -->
     <section id="contato" class="contact-section">
         <div class="container">
             <h2 class="section-title">Contato</h2>
             <div class="form-container">
-                <!-- ❌ ERRADO: </form id="contato-form"> -->
-                <!-- ✅ CORRETO: -->
                 <form id="contato-form">
                     <div class="form-group">
                         <label for="nome">Nome</label>
-                        <!-- Mude name="name" para name="nome" -->
                         <input type="text" id="nome" name="nome" required>
                     </div>
                     <div class="form-group">
@@ -510,12 +421,12 @@
                     </div>
                     <button type="submit" class="submit-btn">Enviar mensagem</button>
                     <div id="status-messagem" class="status-message"></div>
-                </form> <!-- ✅ FECHA A TAG FORM CORRETAMENTE -->
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="contact-links">
@@ -526,9 +437,10 @@
                 <a href="https://api.whatsapp.com/send?phone=5514988009858&text=Olá!%20Vi%20seu%20portfólio%20online."
                     target="_blank" rel="noopener noreferrer">WhatsApp</a>
             </div>
-            <p class="copyright">&copy; 2025 Luiz Fernando da Silva</p>
+            <p class="copyright">&copy; 2026 Luiz Fernando da Silva</p>
         </div>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 
