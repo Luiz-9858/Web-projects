@@ -48,16 +48,6 @@ E-commerce de peças automotivas que estou desenvolvendo para a empresa onde tra
 
 --
 
-### 🦷 [Consultório Odontológico](./projetos/consutorio-odontologico)
-
-Landing page profissional para consultório odontológico.
-
-- **Tecnologias:** HTML, CSS
-- **Status:** 🔴 Pausado
-- **Destaques:** Design clean e profissional
-
---
-
 ### 🥖 [Padaria](./projetos/padaria)
 
 Site institucional para padaria local.
@@ -65,26 +55,6 @@ Site institucional para padaria local.
 - **Tecnologias:** HTML, CSS, Design responsivo
 - **Status:** ✅ Concluído
 - **Destaques:** Visual acolhedor e apetitoso
-
---
-
-### 💪 [Personal Trainer](./projetos/personal-trainer)
-
-Landing page para serviços de personal trainer.
-
-- **Tecnologias:** HTML, CSS
-- **Status:** 🔴 Pausado
-- **Destaques:** Layout motivacional e objetivo
-
---
-
-### 💇 [Salão de Beleza](./projetos/salao-beleza)
-
-Site para salão de beleza com portfólio de serviços.
-
-- **Tecnologias:** HTML, CSS
-- **Status:** 🔴 Pausado
-- **Destaques:** Design elegante e feminino
 
 ---
 
