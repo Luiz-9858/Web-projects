@@ -48,8 +48,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/habilidades.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form-messages.css">
 
     <!-- Font Awesome -->
@@ -208,7 +209,8 @@
             <div class="section-header">
                 <span class="section-badge">Conheça mais</span>
                 <h2 class="section-title">Sobre Mim</h2>
-                <p class="section-subtitle">Desenvolvedor apaixonado por criar experiências digitais incríveis</p>
+                <p class="section-subtitle">Sou formado em <strong>Tecnologia em Análise e Desenvolvimento de
+                        Sistemas</strong> com experiência em tecnologia e programação.</p>
             </div>
 
             <div class="about-content">
@@ -247,7 +249,7 @@
                                 Minha jornada no desenvolvimento web começou com a curiosidade
                                 de entender como os sites funcionam. Hoje, trabalho com
                                 <strong>HTML5</strong>, <strong>CSS3</strong> e <strong>JavaScript</strong>
-                                para construir aplicações que fazem a diferença.
+                                e outras tecnologias para construir aplicações que fazem a diferença.
                             </p>
                             <p>
                                 Tenho experiência em integração com APIs, automação de
@@ -326,70 +328,268 @@
     </section>
 
     <!-- SEÇÃO HABILIDADES -->
-    <section id="habilidades">
+    <section id="habilidades" class="skills-section">
         <div class="container">
-            <h2 class="section-title">Habilidades</h2>
+            <!-- Header da Seção -->
+            <div class="section-header">
+                <span class="section-badge">Minhas Competências</span>
+                <h2 class="section-title">Habilidades</h2>
+                <p class="section-subtitle">Tecnologias e ferramentas que domino para criar soluções incríveis</p>
+            </div>
+
+            <!-- Categorias de Habilidades -->
             <div class="skills-grid">
-                <div class="skill-item">
-                    <h3>Node.js</h3>
-                    <div class="skill-level">Intermediário</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 50%;"></div>
+
+                <!-- CATEGORIA: Front-end -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">💻</div>
+                        <h3 class="category-title">Front-end</h3>
+                    </div>
+
+                    <div class="skills-list">
+                        <!-- HTML5 -->
+                        <div class="skill-item glass-card">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <span class="skill-icon">🔶</span>
+                                    <span class="skill-name">HTML5</span>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90" style="width: 0%">
+                                    <span class="progress-glow"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CSS3 -->
+                        <div class="skill-item glass-card">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <span class="skill-icon">🎨</span>
+                                    <span class="skill-name">CSS3</span>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85" style="width: 0%">
+                                    <span class="progress-glow"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- JavaScript -->
+                        <div class="skill-item glass-card">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <span class="skill-icon">⚡</span>
+                                    <span class="skill-name">JavaScript</span>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80" style="width: 0%">
+                                    <span class="progress-glow"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Responsive Design -->
+                        <div class="skill-item glass-card">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <span class="skill-icon">📱</span>
+                                    <span class="skill-name">Responsive Design</span>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90" style="width: 0%">
+                                    <span class="progress-glow"></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <h3>Supabase</h3>
-                    <!-- <span>Banco de Dados</span> FURUTO COLOCAR COMO SUB TITUTLO -->
-                    <div class="skill-level">Intermediário</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 60%;"></div>
+
+                <!-- CATEGORIA: Ferramentas -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🛠️</div>
+                        <h3 class="category-title">Ferramentas</h3>
+                    </div>
+
+                    <div class="skills-list">
+                        <!-- Git/GitHub -->
+                        <div class="skill-item glass-card">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <span class="skill-icon">🐙</span>
+                                    <span class="skill-name">Git/GitHub</span>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75" style="width: 0%">
+                                    <span class="progress-glow"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- VS Code -->
+                        <div class="skill-item glass-card">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <span class="skill-icon">💙</span>
+                                    <span class="skill-name">VS Code</span>
+                                </div>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95" style="width: 0%">
+                                    <span class="progress-glow"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- n8n -->
+                        <div class="skill-item glass-card">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <span class="skill-icon">🔗</span>
+                                    <span class="skill-name">n8n</span>
+                                </div>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70" style="width: 0%">
+                                    <span class="progress-glow"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Docker -->
+                        <div class="skill-item glass-card">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <span class="skill-icon">🐳</span>
+                                    <span class="skill-name">Docker</span>
+                                </div>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65" style="width: 0%">
+                                    <span class="progress-glow"></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <h3>Vite</h3>
-                    <div class="skill-level">Intermediário</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 60%;"></div>
+
+                <!-- CATEGORIA: Soft Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🌟</div>
+                        <h3 class="category-title">Soft Skills</h3>
+                    </div>
+
+                    <div class="skills-list">
+                        <!-- Resolução de Problemas -->
+                        <div class="skill-item glass-card">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <span class="skill-icon">🧩</span>
+                                    <span class="skill-name">Resolução de Problemas</span>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90" style="width: 0%">
+                                    <span class="progress-glow"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Aprendizado Contínuo -->
+                        <div class="skill-item glass-card">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <span class="skill-icon">📚</span>
+                                    <span class="skill-name">Aprendizado Contínuo</span>
+                                </div>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95" style="width: 0%">
+                                    <span class="progress-glow"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comunicação -->
+                        <div class="skill-item glass-card">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <span class="skill-icon">💬</span>
+                                    <span class="skill-name">Comunicação</span>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85" style="width: 0%">
+                                    <span class="progress-glow"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trabalho em Equipe -->
+                        <div class="skill-item glass-card">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <span class="skill-icon">🤝</span>
+                                    <span class="skill-name">Trabalho em Equipe</span>
+                                </div>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88" style="width: 0%">
+                                    <span class="progress-glow"></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <h3>Next.js</h3>
-                    <div class="skill-level">Intermediário</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 60%;"></div>
+
+            </div>
+
+            <!-- Call to Action -->
+            <div class="skills-cta">
+                <div class="cta-content glass-card">
+                    <div class="cta-text">
+                        <h3>Quer ver essas habilidades em ação?</h3>
+                        <p>Confira meus projetos e veja como aplico essas tecnologias na prática</p>
                     </div>
-                </div>
-                <div class="skill-item">
-                    <h3>JavaScript</h3>
-                    <div class="skill-level">Intermediário </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 50%;"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <h3>TypeScript</h3>
-                    <div class="skill-level">Intermediário</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 75%;"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <h3>Git</h3>
-                    <div class="skill-level">Intermediário</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 65%;"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <h3>Prisma</h3>
-                    <div class="skill-level">Avançado</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%;"></div>
-                    </div>
+                    <a href="#projetos" class="btn btn-primary">
+                        <span>Ver Projetos</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L12 6M16 10L12 14" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
+
+        <!-- Background Decorativo -->
+        <div class="skills-bg-decoration">
+            <div class="decoration-orb orb-1"></div>
+            <div class="decoration-orb orb-2"></div>
+            <div class="decoration-orb orb-3"></div>
+        </div>
     </section>
+
 
     <!-- SEÇÃO PROJETOS -->
     <section id="projetos">
