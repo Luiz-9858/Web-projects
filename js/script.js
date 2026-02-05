@@ -120,7 +120,7 @@ async function handleFormSubmit(event) {
   if (!data.nome || !data.email || !data.mensagem) {
     showMessage(
       "error",
-      "⚠️ Por favor, preencha todos os campos obrigatórios."
+      "⚠️ Por favor, preencha todos os campos obrigatórios.",
     );
     return;
   }
@@ -148,7 +148,7 @@ async function handleFormSubmit(event) {
     if (response.ok) {
       showMessage(
         "success",
-        "✅ Mensagem enviada com sucesso! Entrarei em contato em breve."
+        "✅ Mensagem enviada com sucesso! Entrarei em contato em breve.",
       );
       contactForm.reset(); // Limpa o formulário
 
@@ -161,7 +161,7 @@ async function handleFormSubmit(event) {
     console.error("❌ Erro ao enviar:", error);
     showMessage(
       "error",
-      "❌ Erro ao enviar mensagem. Tente novamente ou entre em contato por email."
+      "❌ Erro ao enviar mensagem. Tente novamente ou entre em contato por email.",
     );
   } finally {
     // Reabilita botão
@@ -173,3 +173,65 @@ async function handleFormSubmit(event) {
 contactForm.addEventListener("submit", handleFormSubmit);
 
 console.log("📧 Form handler carregado e pronto!");
+
+/* ========================================
+   ANIMAÇÃO DAS BARRAS DE HABILIDADES
+   ADICIONAR NO script.js (ou criar skills.js)
+======================================== */
+
+// Função para animar barras de progresso ao scroll
+function animateSkillBars() {
+  const skillItems = document.querySelectorAll(".skill-item");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const progressBar = entry.target.querySelector(".skill-progress");
+          const progress = progressBar.getAttribute("data-progress");
+
+          // Adiciona classe de animação
+          entry.target.classList.add("animated");
+
+          // Anima a barra
+          setTimeout(() => {
+            progressBar.style.width = progress + "%";
+          }, 100);
+
+          // Para de observar após animar
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.5, // Anima quando 50% do elemento estiver visível
+    },
+  );
+
+  // Observa cada skill item
+  skillItems.forEach((item) => {
+    observer.observe(item);
+  });
+}
+
+// Executar quando o DOM estiver pronto
+document.addEventListener("DOMContentLoaded", function () {
+  animateSkillBars();
+});
+
+// ===== ALTERNATIVA: Animação simples sem Intersection Observer =====
+// Use esta versão se a anterior não funcionar no seu navegador
+
+/*
+document.addEventListener('DOMContentLoaded', function() {
+    // Espera 500ms e anima todas as barras de uma vez
+    setTimeout(() => {
+        const progressBars = document.querySelectorAll('.skill-progress');
+        
+        progressBars.forEach(bar => {
+            const progress = bar.getAttribute('data-progress');
+            bar.style.width = progress + '%';
+        });
+    }, 500);
+});
+*/
