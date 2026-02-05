@@ -58,7 +58,7 @@
 .skills-list {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-4);
+  gap: 0.8rem;
 }
 
 /* ===== Card de Habilidade ===== */
