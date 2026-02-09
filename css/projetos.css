@@ -1,0 +1,424 @@
+/* ========================================
+   SEÇÃO PROJETOS - ADICIONAR NO style.css
+   OU CRIAR projetos.css SEPARADO
+======================================== */
+
+/* ===== Container Principal ===== */
+.projects-section {
+  position: relative;
+  padding: var(--spacing-24) 0;
+  background: var(--bg-primary);
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+/* ===== Grid de Projetos ===== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--spacing-8);
+  margin-top: var(--spacing-12);
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+/* ===== Card de Projeto ===== */
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 20px 60px -15px rgba(99, 102, 241, 0.4);
+}
+
+/* ===== Projeto em Destaque ===== */
+.featured-project {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-8);
+  padding: var(--spacing-8);
+  border: 2px solid var(--accent-primary);
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.3);
+}
+
+.featured-project:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 80px -15px rgba(99, 102, 241, 0.5);
+}
+
+/* Badge do Projeto Destaque */
+.project-badge-featured {
+  position: absolute;
+  top: var(--spacing-6);
+  left: var(--spacing-6);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(
+    135deg,
+    var(--accent-primary),
+    var(--accent-secondary)
+  );
+  border-radius: 50px;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  z-index: 10;
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+}
+
+.badge-icon {
+  font-size: 1.25rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+/* ===== Status Badges ===== */
+.project-status-badge {
+  position: absolute;
+  top: var(--spacing-4);
+  right: var(--spacing-4);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+}
+
+.project-status-badge.in-progress {
+  background: rgba(245, 158, 11, 0.2);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #fbbf24;
+}
+
+.project-status-badge.completed {
+  background: rgba(34, 197, 94, 0.2);
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  color: #4ade80;
+}
+
+/* ===== Imagem do Projeto ===== */
+.project-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--bg-secondary);
+}
+
+.featured-project .project-image-wrapper {
+  height: 100%;
+  min-height: 400px;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-smooth);
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1);
+}
+
+/* Overlay com tecnologias */
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--spacing-4);
+  background: linear-gradient(to top, rgba(10, 14, 39, 0.95), transparent);
+  opacity: 0;
+  transition: var(--transition-smooth);
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.overlay-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-badge {
+  padding: 0.375rem 0.75rem;
+  background: rgba(99, 102, 241, 0.2);
+  border: 1px solid rgba(99, 102, 241, 0.4);
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  backdrop-filter: blur(10px);
+}
+
+/* ===== Conteúdo do Projeto ===== */
+.project-content {
+  padding: var(--spacing-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  flex: 1;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.featured-project .project-title {
+  font-size: 2rem;
+}
+
+.project-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* ===== Highlights do Projeto Destaque ===== */
+.project-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-3);
+  margin-top: var(--spacing-2);
+}
+
+.highlight-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  transition: var(--transition-smooth);
+}
+
+.highlight-tag:hover {
+  background: rgba(99, 102, 241, 0.2);
+  border-color: var(--accent-primary);
+}
+
+.tag-icon {
+  font-size: 1.125rem;
+}
+
+/* ===== Ações do Projeto ===== */
+.project-actions {
+  display: flex;
+  gap: var(--spacing-3);
+  margin-top: auto;
+  padding-top: var(--spacing-4);
+}
+
+.project-actions .btn {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  border-radius: 10px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+  border: none;
+  cursor: pointer;
+}
+
+.project-actions .btn-primary {
+  background: linear-gradient(
+    135deg,
+    var(--accent-primary),
+    var(--accent-secondary)
+  );
+  color: white;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.project-actions .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+}
+
+.project-actions .btn-secondary {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--accent-primary);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.project-actions .btn-secondary:hover {
+  background: rgba(99, 102, 241, 0.2);
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+}
+
+.project-actions .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* ===== CTA Final ===== */
+.projects-cta {
+  margin-top: var(--spacing-16);
+  animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
+.projects-cta .cta-content {
+  text-align: center;
+  padding: var(--spacing-10);
+}
+
+.projects-cta h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-3);
+}
+
+.projects-cta p {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-6);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-4);
+  flex-wrap: wrap;
+}
+
+/* ===== Background Decorativo ===== */
+.projects-bg-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.projects-bg-decoration .decoration-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+}
+
+.projects-bg-decoration .orb-1 {
+  width: 600px;
+  height: 600px;
+  background: var(--accent-secondary);
+  top: -200px;
+  left: -200px;
+  animation: float 12s ease-in-out infinite;
+}
+
+.projects-bg-decoration .orb-2 {
+  width: 500px;
+  height: 500px;
+  background: var(--accent-primary);
+  bottom: -150px;
+  right: -150px;
+  animation: float 15s ease-in-out infinite reverse;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 1024px) {
+  .featured-project {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-project .project-image-wrapper {
+    min-height: 300px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    padding: var(--spacing-16) 0;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-6);
+  }
+
+  .project-actions {
+    flex-direction: column;
+  }
+
+  .project-actions .btn {
+    width: 100%;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-project {
+    padding: var(--spacing-6);
+  }
+
+  .project-content {
+    padding: var(--spacing-5);
+  }
+
+  .project-highlights {
+    flex-direction: column;
+  }
+
+  .project-badge-featured {
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+  }
+}
