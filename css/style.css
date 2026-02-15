@@ -1,3 +1,22 @@
+/* RESET FORÇADO - Adicione no TOPO do style.css */
+section {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Remove estilos antigos das seções */
+#sobre:not(.about-section),
+#habilidades:not(.skills-section),
+#projetos:not(.projects-section),
+#contato:not(.contact-section) {
+  display: none !important;
+}
 /**
  * ============================================
  * PORTFOLIO LUIZ FERNANDO - STYLE.CSS
@@ -701,7 +720,7 @@ section {
    ============================================ */
 
 #habilidades {
-  background: #f8fafc;
+  background: #ffffff;
 }
 
 .skills-grid {
