@@ -1,0 +1,428 @@
+/* ========================================
+   SEÇÃO CONTATO - ADICIONAR NO style.css
+   OU CRIAR contato.css SEPARADO
+======================================== */
+
+/* ===== Container Principal ===== */
+.contact-section {
+  position: relative;
+  padding: var(--spacing-24) 0;
+  background: var(--bg-primary);
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+/* ===== Layout Principal ===== */
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--spacing-10);
+  margin-top: var(--spacing-12);
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+/* ===== Informações de Contato ===== */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info .info-card {
+  padding: var(--spacing-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+  height: 100%;
+}
+
+.contact-info h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  margin-bottom: var(--spacing-2);
+}
+
+.info-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* ===== Métodos de Contato ===== */
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  margin-top: var(--spacing-4);
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  padding: var(--spacing-4);
+  text-decoration: none;
+  transition: var(--transition-smooth);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.contact-method:hover {
+  transform: translateX(8px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.2);
+}
+
+.method-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.method-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.method-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.method-value {
+  font-size: 0.9375rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* ===== Card de Disponibilidade ===== */
+.availability-card {
+  padding: var(--spacing-5);
+  margin-top: var(--spacing-4);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  background: rgba(34, 197, 94, 0.05);
+}
+
+.availability-status {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  margin-bottom: var(--spacing-2);
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.6);
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+.status-text {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #4ade80;
+}
+
+.availability-description {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* ===== Formulário de Contato ===== */
+.contact-form-wrapper {
+  display: flex;
+}
+
+.contact-form {
+  width: 100%;
+  padding: var(--spacing-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+/* ===== Form Groups ===== */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.form-label {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.label-text {
+  color: var(--text-primary);
+}
+
+.label-required {
+  color: var(--accent-primary);
+  font-size: 1.125rem;
+}
+
+/* ===== Input Wrapper ===== */
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1rem 3rem 1rem 1.25rem;
+  background: rgba(99, 102, 241, 0.05);
+  border: 2px solid rgba(99, 102, 241, 0.2);
+  border-radius: 12px;
+  font-size: 1rem;
+  color: var(--text-primary);
+  transition: var(--transition-smooth);
+  font-family: inherit;
+}
+
+.form-input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.6;
+}
+
+.form-input:focus {
+  outline: none;
+  background: rgba(99, 102, 241, 0.08);
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.form-input:hover:not(:focus) {
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+/* Input com erro */
+.form-input.error {
+  border-color: #ef4444;
+  background: rgba(239, 68, 68, 0.05);
+}
+
+.form-input.error:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+/* Input válido */
+.form-input.valid {
+  border-color: #22c55e;
+}
+
+/* ===== Textarea ===== */
+.form-textarea {
+  min-height: 150px;
+  resize: vertical;
+  padding-top: 1rem;
+}
+
+/* ===== Ícones dos Inputs ===== */
+.input-icon {
+  position: absolute;
+  right: 1.25rem;
+  font-size: 1.25rem;
+  pointer-events: none;
+  opacity: 0.5;
+  transition: var(--transition-smooth);
+}
+
+.form-input:focus + .input-icon {
+  opacity: 1;
+}
+
+.textarea-icon {
+  top: 1rem;
+}
+
+/* ===== Botão Submit ===== */
+.btn-submit {
+  position: relative;
+  width: 100%;
+  padding: 1.25rem 2rem;
+  margin-top: var(--spacing-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background: linear-gradient(
+    135deg,
+    var(--accent-primary),
+    var(--accent-secondary)
+  );
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+}
+
+.btn-submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(99, 102, 241, 0.4);
+}
+
+.btn-submit:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.btn-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.btn-loader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ===== Loader Spinner ===== */
+.loader-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===== Mensagem de Feedback ===== */
+.form-message {
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-align: center;
+  animation: slideInUp 0.3s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-message.success {
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  color: #4ade80;
+}
+
+.form-message.error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #f87171;
+}
+
+/* ===== Background Decorativo ===== */
+.contact-bg-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.contact-bg-decoration .decoration-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+}
+
+.contact-bg-decoration .orb-1 {
+  width: 500px;
+  height: 500px;
+  background: var(--accent-primary);
+  top: -150px;
+  right: -150px;
+  animation: float 10s ease-in-out infinite;
+}
+
+.contact-bg-decoration .orb-2 {
+  width: 400px;
+  height: 400px;
+  background: var(--accent-secondary);
+  bottom: -100px;
+  left: -100px;
+  animation: float 12s ease-in-out infinite reverse;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 1024px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: var(--spacing-16) 0;
+  }
+
+  .contact-form,
+  .contact-info .info-card {
+    padding: var(--spacing-6);
+  }
+
+  .form-input {
+    padding: 0.875rem 3rem 0.875rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-methods {
+    gap: var(--spacing-2);
+  }
+
+  .contact-method {
+    padding: var(--spacing-3);
+  }
+
+  .method-icon {
+    font-size: 1.5rem;
+  }
+}
