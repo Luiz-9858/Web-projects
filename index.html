@@ -51,6 +51,7 @@
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/habilidades.css">
     <link rel="stylesheet" href="css/projetos.css">
+    <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form-messages.css">
 
@@ -612,7 +613,7 @@
                     </div>
 
                     <div class="project-image-wrapper">
-                        <img src="imagens/layout-autopecas.png" alt="AutoPeças Pro IA - Sistema de recomendação com IA"
+                        <img src="imagens/layout-autopecas.jpg" alt="AutoPeças Pro IA - Sistema de recomendação com IA"
                             class="project-image">
                         <div class="project-overlay">
                             <div class="overlay-tech">
@@ -672,7 +673,7 @@
                 <!-- PROJETO 2: Portfólio Pessoal -->
                 <div class="project-card glass-card">
                     <div class="project-image-wrapper">
-                        <img src="images/projetos/portfolio-preview.jpg" alt="Portfólio Pessoal" class="project-image">
+                        <img src="imagens/Meu-Portfolio.jpg" alt="Portfólio Pessoal" class="project-image">
                         <div class="project-overlay">
                             <div class="overlay-tech">
                                 <span class="tech-badge">HTML5</span>
@@ -719,7 +720,7 @@
                     </div>
 
                     <div class="project-image-wrapper">
-                        <img src="images/projetos/b77-preview.jpg" alt="B77 Auto Parts" class="project-image">
+                        <img src="imagens/b77-Autopecas-Pro.jpg" alt="B77 Auto Parts" class="project-image">
                         <div class="project-overlay">
                             <div class="overlay-tech">
                                 <span class="tech-badge">HTML5</span>
@@ -756,7 +757,7 @@
                     </div>
 
                     <div class="project-image-wrapper">
-                        <img src="imagens/padaria-santa-edwirges.png" alt="Site Padaria Artesanal"
+                        <img src="imagens/padaria-santa-edwirges.jpg" alt="Site Padaria Artesanal"
                             class="project-image">
                         <div class="project-overlay">
                             <div class="overlay-tech">
@@ -824,31 +825,160 @@
     </section>
 
     <!-- SEÇÃO CONTATO -->
+    <!-- SUBSTITUIR NO index.html -->
     <section id="contato" class="contact-section">
         <div class="container">
-            <h2 class="section-title">Contato</h2>
-            <div class="form-container">
-                <form id="contato-form">
-                    <div class="form-group">
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="assunto">Assunto</label>
-                        <input type="text" id="assunto" name="assunto" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="mensagem">Mensagem</label>
-                        <textarea id="mensagem" name="mensagem" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Enviar mensagem</button>
-                    <div id="status-messagem" class="status-message"></div>
-                </form>
+            <!-- Header da Seção -->
+            <div class="section-header">
+                <span class="section-badge">Fale Comigo</span>
+                <h2 class="section-title">Contato</h2>
+                <p class="section-subtitle">Vamos transformar sua ideia em realidade?</p>
             </div>
+
+            <!-- Conteúdo Principal -->
+            <div class="contact-content">
+
+                <!-- Informações de Contato -->
+                <div class="contact-info">
+                    <div class="info-card glass-card">
+                        <h3 class="gradient-text">Vamos conversar!</h3>
+                        <p class="info-description">
+                            Estou disponível para novos projetos e oportunidades.
+                            Preencha o formulário ou entre em contato através das minhas redes sociais.
+                        </p>
+
+                        <!-- Métodos de Contato -->
+                        <div class="contact-methods">
+                            <a href="mailto:luizfernandodev16@gmail.com" class="contact-method glass-card">
+                                <div class="method-icon">📧</div>
+                                <div class="method-content">
+                                    <span class="method-label">Email</span>
+                                    <span class="method-value">luizfernandodev16@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/luiz-fernando-fullstack" target="_blank"
+                                rel="noopener noreferrer" class="contact-method glass-card">
+                                <div class="method-icon">💼</div>
+                                <div class="method-content">
+                                    <span class="method-label">LinkedIn</span>
+                                    <span class="method-value">luiz-fernando-fullstack</span>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/Luiz-9858" target="_blank" rel="noopener noreferrer"
+                                class="contact-method glass-card">
+                                <div class="method-icon">🐙</div>
+                                <div class="method-content">
+                                    <span class="method-label">GitHub</span>
+                                    <span class="method-value">@Luiz-9858</span>
+                                </div>
+                            </a>
+
+                            <a href="https://www.instagram.com/lfcodes" target="_blank" rel="noopener noreferrer"
+                                class="contact-method glass-card">
+                                <div class="method-icon">📸</div>
+                                <div class="method-content">
+                                    <span class="method-label">Instagram</span>
+                                    <span class="method-value">@lfcodes</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Disponibilidade -->
+                        <div class="availability-card glass-card">
+                            <div class="availability-status">
+                                <span class="status-dot"></span>
+                                <span class="status-text">Disponível para novos projetos</span>
+                            </div>
+                            <p class="availability-description">
+                                Tempo de resposta: geralmente dentro de 24 horas
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário de Contato -->
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form glass-card">
+                        <!-- Nome -->
+                        <div class="form-group">
+                            <label for="name" class="form-label">
+                                <span class="label-text">Nome Completo</span>
+                                <span class="label-required">*</span>
+                            </label>
+                            <div class="input-wrapper">
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Seu nome"
+                                    required>
+                                <span class="input-icon">👤</span>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email" class="form-label">
+                                <span class="label-text">Email</span>
+                                <span class="label-required">*</span>
+                            </label>
+                            <div class="input-wrapper">
+                                <input type="email" id="email" name="email" class="form-input"
+                                    placeholder="seu@email.com" required>
+                                <span class="input-icon">📧</span>
+                            </div>
+                        </div>
+
+                        <!-- Assunto -->
+                        <div class="form-group">
+                            <label for="subject" class="form-label">
+                                <span class="label-text">Assunto</span>
+                                <span class="label-required">*</span>
+                            </label>
+                            <div class="input-wrapper">
+                                <input type="text" id="subject" name="subject" class="form-input"
+                                    placeholder="Sobre o que deseja falar?" required>
+                                <span class="input-icon">📝</span>
+                            </div>
+                        </div>
+
+                        <!-- Mensagem -->
+                        <div class="form-group">
+                            <label for="message" class="form-label">
+                                <span class="label-text">Mensagem</span>
+                                <span class="label-required">*</span>
+                            </label>
+                            <div class="input-wrapper">
+                                <textarea id="message" name="message" class="form-input form-textarea"
+                                    placeholder="Conte-me sobre seu projeto..." rows="6" required></textarea>
+                                <span class="input-icon textarea-icon">💬</span>
+                            </div>
+                        </div>
+
+                        <!-- Botão Submit -->
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Enviar Mensagem</span>
+                            <span class="btn-loader" style="display: none;">
+                                <span class="loader-spinner"></span>
+                                Enviando...
+                            </span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" class="btn-icon">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+
+                        <!-- Mensagens de Feedback -->
+                        <div id="form-message" class="form-message" style="display: none;"></div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Background Decorativo -->
+        <div class="contact-bg-decoration">
+            <div class="decoration-orb orb-1"></div>
+            <div class="decoration-orb orb-2"></div>
         </div>
     </section>
 
