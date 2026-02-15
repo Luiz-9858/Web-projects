@@ -219,6 +219,34 @@ document.addEventListener("DOMContentLoaded", function () {
   animateSkillBars();
 });
 
+// Toggle Menu Mobile
+const navbarToggle = document.getElementById("navbar-toggle");
+const navbarMobile = document.getElementById("navbar-mobile");
+
+navbarToggle.addEventListener("click", () => {
+  navbarToggle.classList.toggle("active");
+  navbarMobile.classList.toggle("active");
+});
+
+// Fechar menu ao clicar em link
+const mobileLinks = document.querySelectorAll(".navbar-mobile-link");
+mobileLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navbarToggle.classList.remove("active");
+    navbarMobile.classList.remove("active");
+  });
+});
+
+// Adicionar classe 'scrolled' ao scrollar
+window.addEventListener("scroll", () => {
+  const navbar = document.getElementById("navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
+
 // ===== ALTERNATIVA: Animação simples sem Intersection Observer =====
 // Use esta versão se a anterior não funcionar no seu navegador
 
