@@ -45,21 +45,13 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/sobre.css">
-    <link rel="stylesheet" href="css/habilidades.css">
-    <link rel="stylesheet" href="css/projetos.css">
-    <link rel="stylesheet" href="css/contato.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/form-messages.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Theme Color -->
-    <meta name="theme-color" content="#0a0e27">
+    <!-- <meta name="theme-color" content="#0a0e27"> -->
     <meta name="msapplication-navbutton-color" content="#0a0e27">
     <meta name="apple-mobile-web-app-status-bar-style" content="#0a0e27">
 </head>
@@ -982,20 +974,130 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
+    <!-- FOOTER - ADICIONAR NO FINAL DO index.html (antes do </body>) -->
+    <footer class="footer">
         <div class="container">
-            <div class="contact-links">
-                <a href="mailto:luizfernandodev16@gmail.com">Email</a>
-                <a href="https://www.linkedin.com/in/luiz-fernando-9747922b7/" target="_blank"
-                    rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://github.com/Luiz-9858" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://api.whatsapp.com/send?phone=5514988009858&text=Olá!%20Vi%20seu%20portfólio%20online."
-                    target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <!-- Conteúdo Principal do Footer -->
+            <div class="footer-content">
+
+                <!-- Coluna 1: Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">LF</span>
+                        <span class="logo-text">Luiz Fernando</span>
+                    </div>
+                    <p class="footer-description">
+                        Desenvolvedor Full Stack apaixonado por criar experiências digitais modernas e funcionais.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="https://github.com/Luiz-9858" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/luiz-fernando-fullstack" target="_blank"
+                            rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/lfcodes" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:luizfernandodev16@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Links Rápidos -->
+                <div class="footer-links">
+                    <h3 class="footer-title">Links Rápidos</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#sobre">Sobre Mim</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Projetos Destaque -->
+                <div class="footer-links">
+                    <h3 class="footer-title">Projetos</h3>
+                    <ul class="footer-menu">
+                        <li>
+                            <a href="https://autopecas-pro-ia.vercel.app" target="_blank" rel="noopener noreferrer">
+                                AutoPeças Pro IA
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://luiz-silva-portfolio.netlify.app" target="_blank"
+                                rel="noopener noreferrer">
+                                Portfólio Pessoal
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Luiz-9858" target="_blank" rel="noopener noreferrer">
+                                Ver Todos no GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4: Contato -->
+                <div class="footer-links">
+                    <h3 class="footer-title">Contato</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bauru, SP - Brasil</span>
+                        </li>
+                        <li>
+                            <a href="mailto:luizfernandodev16@gmail.com">
+                                <i class="fas fa-envelope"></i>
+                                <span>luizfernandodev16@gmail.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fas fa-briefcase"></i>
+                            <span>Disponível para projetos</span>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
-            <p class="copyright">&copy; 2026 Luiz Fernando da Silva</p>
+
+            <!-- Divisor -->
+            <div class="footer-divider"></div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © <span id="current-year">2026</span> Luiz Fernando. Desenvolvido com
+                    <span class="heart">❤️</span> e
+                    <span class="code">código</span>
+                </p>
+                <div class="footer-tech">
+                    <span class="tech-item">HTML5</span>
+                    <span class="tech-separator">•</span>
+                    <span class="tech-item">CSS3</span>
+                    <span class="tech-separator">•</span>
+                    <span class="tech-item">JavaScript</span>
+                    <span class="tech-separator">•</span>
+                    <span class="tech-item">n8n</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background decorativo -->
+        <div class="footer-bg-decoration">
+            <div class="decoration-orb orb-1"></div>
+            <div class="decoration-orb orb-2"></div>
         </div>
     </footer>
+
+    <!-- Script para ano dinâmico -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 
     <script src="js/script.js"></script>
 </body>
