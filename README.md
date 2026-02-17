@@ -1,4 +1,4 @@
-# 💼 Portfólio Luiz Fernando - Desenvolvedor Front-end
+# 💼 Portfólio Luiz Fernando - Desenvolvedor Full Stack
 
 <div align="center">
 
@@ -264,7 +264,7 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 ### Luiz Fernando da Silva
 
-**Desenvolvedor Front-end**
+**Desenvolvedor Full Stack**
 
 [![Email](https://img.shields.io/badge/Email-luizfernandodev16@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:luizfernandodev16@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-luiz--fernando--fullstack-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/luiz-fernando-fullstack)
