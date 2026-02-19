@@ -1,0 +1,17 @@
+# robots.txt - Instruções para crawlers
+# https://luiz-silva-portfolio.netlify.app/robots.txt
+
+# Permitir todos os crawlers
+User-agent: *
+Allow: /
+
+# Bloquear pastas sensíveis (se existirem)
+Disallow: /n8n-backups/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Sitemap
+Sitemap: https://luiz-silva-portfolio.netlify.app/sitemap.xml
+
+# Crawl-delay (opcional - evita sobrecarga)
+# Crawl-delay: 10
