@@ -54,6 +54,155 @@
     <!-- <meta name="theme-color" content="#0a0e27"> -->
     <meta name="msapplication-navbutton-color" content="#0a0e27">
     <meta name="apple-mobile-web-app-status-bar-style" content="#0a0e27">
+
+    <!-- ========================================
+     SCHEMA.ORG - JSON-LD
+     Adicionar ANTES do </head> no index.html
+     
+     Google mostra esses dados nos resultados!
+======================================== -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://luiz-silva-portfolio.netlify.app/#person",
+      "name": "Luiz Fernando da Silva",
+      "givenName": "Luiz Fernando",
+      "familyName": "da Silva",
+      "url": "https://luiz-silva-portfolio.netlify.app",
+      "image": "https://luiz-silva-portfolio.netlify.app/images/portfolio.png",
+      "jobTitle": "Desenvolvedor Front-end",
+      "description": "Desenvolvedor Front-end especializado em criar interfaces modernas, responsivas e otimizadas.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bauru",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "email": "luizfernandodev16@gmail.com",
+      "telephone": "+55-14-98800-9858",
+      "sameAs": [
+        "https://github.com/Luiz-9858",
+        "https://linkedin.com/in/luiz-fernando-fullstack",
+        "https://instagram.com/lfcodes"
+      ],
+      "knowsAbout": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "n8n",
+        "Docker",
+        "Desenvolvimento Web",
+        "Front-end Development",
+        "Web Design",
+        "UI/UX"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelancer"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Autodidata"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://luiz-silva-portfolio.netlify.app/#website",
+      "url": "https://luiz-silva-portfolio.netlify.app",
+      "name": "Portfólio Luiz Fernando",
+      "description": "Portfólio profissional de Luiz Fernando, desenvolvedor Front-end. Projetos, habilidades e contato.",
+      "publisher": {
+        "@id": "https://luiz-silva-portfolio.netlify.app/#person"
+      },
+      "inLanguage": "pt-BR",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://luiz-silva-portfolio.netlify.app/#search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://luiz-silva-portfolio.netlify.app/#webpage",
+      "url": "https://luiz-silva-portfolio.netlify.app",
+      "name": "Luiz Fernando | Desenvolvedor Front-end | Portfólio",
+      "isPartOf": {
+        "@id": "https://luiz-silva-portfolio.netlify.app/#website"
+      },
+      "about": {
+        "@id": "https://luiz-silva-portfolio.netlify.app/#person"
+      },
+      "description": "Desenvolvedor Front-end especializado em criar interfaces modernas e responsivas. Disponível para projetos freelance.",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://luiz-silva-portfolio.netlify.app/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://luiz-silva-portfolio.netlify.app"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Sobre",
+          "item": "https://luiz-silva-portfolio.netlify.app#sobre"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Projetos",
+          "item": "https://luiz-silva-portfolio.netlify.app#projetos"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Contato",
+          "item": "https://luiz-silva-portfolio.netlify.app#contato"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "name": "Projetos",
+      "description": "Principais projetos desenvolvidos por Luiz Fernando",
+      "itemListElement": [
+        {
+          "@type": "SoftwareApplication",
+          "position": 1,
+          "name": "AutoPeças Pro IA",
+          "description": "Sistema MVP de recomendação inteligente de autopeças usando IA",
+          "url": "https://autopecas-pro-ia.vercel.app",
+          "applicationCategory": "WebApplication",
+          "operatingSystem": "Any",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "BRL"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 2,
+          "name": "Portfólio Pessoal",
+          "description": "Site portfólio moderno com design dark mode e automação n8n",
+          "url": "https://luiz-silva-portfolio.netlify.app",
+          "applicationCategory": "WebApplication",
+          "operatingSystem": "Any"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
 </head>
 
 <body>
