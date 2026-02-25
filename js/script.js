@@ -447,3 +447,53 @@ window.addEventListener("error", function (e) {
 });
 
 console.log("📦 Script carregado - Aguardando DOM...");
+
+// ========================================
+// GOOGLE ANALYTICS - EVENTOS PERSONALIZADOS
+// ========================================
+
+// Evento: Envio de Formulário
+document.getElementById("contact-form").addEventListener("submit", function () {
+  gtag("event", "form_submit", {
+    event_category: "Contato",
+    event_label: "Formulário Principal",
+    value: 1,
+  });
+});
+
+// Evento: Clique em "Ver Projetos"
+document.querySelectorAll('a[href*="projetos"]').forEach((link) => {
+  link.addEventListener("click", function () {
+    gtag("event", "click", {
+      event_category: "Navegação",
+      event_label: "Ver Projetos",
+      value: 1,
+    });
+  });
+});
+
+// Evento: Clique em Redes Sociais
+document
+  .querySelectorAll(".social-link, .navbar-mobile-socials a")
+  .forEach((link) => {
+    link.addEventListener("click", function (e) {
+      const platform = this.getAttribute("aria-label") || "Social";
+      gtag("event", "click", {
+        event_category: "Social",
+        event_label: platform,
+        value: 1,
+      });
+    });
+  });
+
+// Evento: Alternância Dark/Light Mode
+document.getElementById("theme-toggle").addEventListener("click", function () {
+  const theme = document.documentElement.getAttribute("data-theme");
+  gtag("event", "theme_change", {
+    event_category: "Preferências",
+    event_label: theme === "light" ? "Dark Mode" : "Light Mode",
+    value: 1,
+  });
+});
+
+console.log("📊 Google Analytics eventos configurados!");
