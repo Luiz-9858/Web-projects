@@ -233,80 +233,83 @@
 
 <body>
     <!-- NAVEGAÇÃO -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="navbar-container">
-                <a href="#home" class="navbar-brand">
-                    <span class="navbar-logo">LF</span>
-                    <span class="navbar-name">Luiz Fernando</span>
-                </a>
+    <header role="banner">
+        <nav class="navbar" id="navbar" role="navigation" aria-label="Menu principal">
+            <div class="container">
+                <div class="navbar-container">
+                    <a href="#home" class="navbar-brand" aria-label="Voltar ao topo">
+                        <span class="navbar-logo" aria-hidden="true">LF</span>
+                        <span class="navbar-name">Luiz Fernando</span>
+                    </a>
 
-                <div class="navbar-menu">
-                    <a href="#sobre" class="navbar-link">
+                    <div class="navbar-menu">
+                        <a href="#sobre" class="navbar-link" aria-label="Ir para seção Sobre">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                            <span>Sobre</span>
+                        </a>
+                        <a href="#habilidades" class="navbar-link" aria-label="Ir para seção Habilidades">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                            <span>Habilidades</span>
+                        </a>
+                        <a href="#projetos" class="navbar-link" aria-label="Ir para seção Projetos">
+                            <i class="fas fa-folder-open" aria-hidden="true"></i>
+                            <span>Projetos</span>
+                        </a>
+                        <a href="#contato" class="navbar-link" aria-label="Ir para seção Contato">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <span>Contato</span>
+                        </a>
+                    </div>
+
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+
+                    <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
+                        <span class="navbar-toggle-icon"></span>
+                        <span class="navbar-toggle-icon"></span>
+                        <span class="navbar-toggle-icon"></span>
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="navbar-mobile" id="navbar-mobile">
+                <div class="navbar-mobile-content">
+                    <a href="#sobre" class="navbar-mobile-link">
                         <i class="fas fa-user"></i>
                         <span>Sobre</span>
                     </a>
-                    <a href="#habilidades" class="navbar-link">
+                    <a href="#habilidades" class="navbar-mobile-link">
                         <i class="fas fa-code"></i>
                         <span>Habilidades</span>
                     </a>
-                    <a href="#projetos" class="navbar-link">
+                    <a href="#projetos" class="navbar-mobile-link">
                         <i class="fas fa-folder-open"></i>
                         <span>Projetos</span>
                     </a>
-                    <a href="#contato" class="navbar-link">
+                    <a href="#contato" class="navbar-mobile-link">
                         <i class="fas fa-envelope"></i>
                         <span>Contato</span>
                     </a>
-                </div>
 
-                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-                    <i class="fas fa-moon"></i>
-                </button>
-
-                <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
-                    <span class="navbar-toggle-icon"></span>
-                    <span class="navbar-toggle-icon"></span>
-                    <span class="navbar-toggle-icon"></span>
-                </button>
-            </div>
-        </div>
-
-        <div class="navbar-mobile" id="navbar-mobile">
-            <div class="navbar-mobile-content">
-                <a href="#sobre" class="navbar-mobile-link">
-                    <i class="fas fa-user"></i>
-                    <span>Sobre</span>
-                </a>
-                <a href="#habilidades" class="navbar-mobile-link">
-                    <i class="fas fa-code"></i>
-                    <span>Habilidades</span>
-                </a>
-                <a href="#projetos" class="navbar-mobile-link">
-                    <i class="fas fa-folder-open"></i>
-                    <span>Projetos</span>
-                </a>
-                <a href="#contato" class="navbar-mobile-link">
-                    <i class="fas fa-envelope"></i>
-                    <span>Contato</span>
-                </a>
-
-                <div class="navbar-mobile-socials">
-                    <a href="https://github.com/Luiz-9858" target="_blank" rel="noopener noreferrer"
-                        aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/luiz-fernando-9747922b7/" target="_blank"
-                        rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:luizfernandodev16@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
+                    <div class="navbar-mobile-socials">
+                        <a href="https://github.com/Luiz-9858" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/luiz-fernando-9747922b7/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:luizfernandodev16@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- HERO SECTION -->
     <header class="hero" id="home">
