@@ -6,15 +6,116 @@
 // ========================================
 // CONFIGURAÇÕES
 // ========================================
-const N8N_WEBHOOK_URL =
-  "https://craftless-mimically-inge.ngrok-free.dev/webhook/portfolio-contact";
+// const N8N_WEBHOOK_URL =
+//   "https://craftless-mimically-inge.ngrok-free.dev/webhook/portfolio-contact";
+
+const FORMSPARK_ENDPOINT = "https://formspree.io/f/maqdzado";
 
 // ========================================
 // 1. FORMULÁRIO DE CONTATO + N8N
 // ========================================
+// function initContactForm() {
+//   const contactForm = document.getElementById("contact-form");
+//   if (!contactForm) return;
+
+//   const submitButton = contactForm.querySelector('button[type="submit"]');
+//   const btnText = submitButton.querySelector(".btn-text");
+//   const btnLoader = submitButton.querySelector(".btn-loader");
+//   const formMessage = document.getElementById("form-message");
+
+//   function showMessage(type, message) {
+//     formMessage.textContent = message;
+//     formMessage.className = `form-message ${type}`;
+//     formMessage.style.display = "block";
+
+//     setTimeout(() => {
+//       formMessage.style.display = "none";
+//     }, 5000);
+//   }
+
+//   function setButtonState(isLoading) {
+//     if (isLoading) {
+//       submitButton.disabled = true;
+//       btnText.style.display = "none";
+//       btnLoader.style.display = "flex";
+//     } else {
+//       submitButton.disabled = false;
+//       btnText.style.display = "block";
+//       btnLoader.style.display = "none";
+//     }
+//   }
+
+//   contactForm.addEventListener("submit", async function (e) {
+//     e.preventDefault();
+
+//     const formData = new FormData(contactForm);
+//     const data = {
+//       nome: formData.get("name"),
+//       email: formData.get("email"),
+//       assunto: formData.get("subject"),
+//       mensagem: formData.get("message"),
+//       timestamp: new Date().toISOString(),
+//     };
+
+//     // Validação básica
+//     if (!data.nome || !data.email || !data.mensagem) {
+//       showMessage(
+//         "error",
+//         "⚠️ Por favor, preencha todos os campos obrigatórios.",
+//       );
+//       return;
+//     }
+
+//     // Valida email
+//     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//     if (!emailRegex.test(data.email)) {
+//       showMessage("error", "⚠️ Por favor, insira um email válido.");
+//       return;
+//     }
+
+//     setButtonState(true);
+
+//     try {
+//       const response = await fetch(N8N_WEBHOOK_URL, {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify(data),
+//       });
+
+//       if (response.ok) {
+//         showMessage(
+//           "success",
+//           "✅ Mensagem enviada com sucesso! Entrarei em contato em breve.",
+//         );
+//         contactForm.reset();
+//         console.log("✅ Formulário enviado:", data);
+//       } else {
+//         throw new Error("Erro ao enviar mensagem");
+//       }
+//     } catch (error) {
+//       console.error("❌ Erro ao enviar:", error);
+//       showMessage(
+//         "error",
+//         "❌ Erro ao enviar mensagem. Tente novamente ou entre em contato por email.",
+//       );
+//     } finally {
+//       setButtonState(false);
+//     }
+//   });
+
+//   console.log("📧 Formulário de contato carregado!");
+// }
+
+// ========================================
+// FORMULÁRIO DE CONTATO + FORMSPREE
+// ========================================
 function initContactForm() {
   const contactForm = document.getElementById("contact-form");
   if (!contactForm) return;
+
+  const FORMSPREE_ENDPOINT = "https://formspree.io/f/maqdzado"; // COLE SEU ID AQUI
 
   const submitButton = contactForm.querySelector('button[type="submit"]');
   const btnText = submitButton.querySelector(".btn-text");
@@ -47,16 +148,13 @@ function initContactForm() {
     e.preventDefault();
 
     const formData = new FormData(contactForm);
-    const data = {
-      nome: formData.get("name"),
-      email: formData.get("email"),
-      assunto: formData.get("subject"),
-      mensagem: formData.get("message"),
-      timestamp: new Date().toISOString(),
-    };
 
     // Validação básica
-    if (!data.nome || !data.email || !data.mensagem) {
+    const nome = formData.get("name");
+    const email = formData.get("email");
+    const mensagem = formData.get("message");
+
+    if (!nome || !email || !mensagem) {
       showMessage(
         "error",
         "⚠️ Por favor, preencha todos os campos obrigatórios.",
@@ -66,7 +164,7 @@ function initContactForm() {
 
     // Valida email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(data.email)) {
+    if (!emailRegex.test(email)) {
       showMessage("error", "⚠️ Por favor, insira um email válido.");
       return;
     }
@@ -74,12 +172,12 @@ function initContactForm() {
     setButtonState(true);
 
     try {
-      const response = await fetch(N8N_WEBHOOK_URL, {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
         method: "POST",
+        body: formData,
         headers: {
-          "Content-Type": "application/json",
+          Accept: "application/json",
         },
-        body: JSON.stringify(data),
       });
 
       if (response.ok) {
@@ -88,7 +186,7 @@ function initContactForm() {
           "✅ Mensagem enviada com sucesso! Entrarei em contato em breve.",
         );
         contactForm.reset();
-        console.log("✅ Formulário enviado:", data);
+        console.log("✅ Formulário enviado via Formspree");
       } else {
         throw new Error("Erro ao enviar mensagem");
       }
@@ -103,7 +201,7 @@ function initContactForm() {
     }
   });
 
-  console.log("📧 Formulário de contato carregado!");
+  console.log("📧 Formulário de contato carregado (Formspree)!");
 }
 
 // ========================================
