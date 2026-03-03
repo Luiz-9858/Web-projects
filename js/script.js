@@ -280,7 +280,7 @@ function initTypewriter() {
   if (!typewriterElement) return;
 
   const texts = [
-    "Desenvolvedor Front-end em Formação",
+    "Desenvolvedor Full Stack em Formação",
     "Criador de Experiências Web",
     "Especialista em UI Moderna",
     "Solucionador de Problemas",
